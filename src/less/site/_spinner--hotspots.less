@@ -1,0 +1,80 @@
+.hotspot-frame {
+
+  top: 0;
+  left: 0;
+  position: relative;
+  z-index: 120;
+
+  &#info--group_1 {
+    .gps_ring {
+      border-color: @rb-red;
+    }
+  }
+
+  &#info--group_2 {
+    display: none;
+    .gps_ring {
+      border-color: red;
+    }
+  }
+
+  &#info--group_3 {
+    display: none;
+    .gps_ring {
+      border-color: pink;
+    }
+  }
+
+  .gps_ring {
+
+    &.fs-tabs-active, &.active {
+      border-color: @white!important;
+    }
+
+    &:nth-child(1) {
+      left: 50px;
+      top:  30px;
+    }
+    &:nth-child(2) {
+      left: 20px;
+      top:  40px;
+    }
+    &:nth-child(3) {
+      left: 120px;
+      top:  90px;
+    }
+    &:nth-child(4) {
+      left: 20px;
+      top:  60px;
+      display: none;
+    }
+    &:nth-child(5) {
+      left: 70px;
+      top:  50px;
+      display: none;
+    }
+    &:nth-child(6) {
+      left: 40px;
+      top:  70px;
+      display: none;
+    }
+  }
+
+}
+
+.gps_ring {
+  border: 5px solid #999;
+  -webkit-border-radius: 30px;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  -webkit-animation: pulsate 1s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  opacity: 0.0
+}
+
+@-webkit-keyframes pulsate {
+  0% {-webkit-transform: scale(.5, .5); opacity: 0.0;}
+  50% {opacity: 1.0;}
+  100% {-webkit-transform: scale(1, 1); opacity: 0.0;}
+}
