@@ -5158,6 +5158,9 @@ section header {
 #home--about_wrapper #home--about_bg:hover {
   opacity: .75;
 }
+#home--story p a {
+  color: #ffffff;
+}
 #home--story figure img {
   margin-bottom: 15px;
 }
