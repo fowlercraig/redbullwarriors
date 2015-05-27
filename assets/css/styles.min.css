@@ -4886,12 +4886,8 @@ h5,
 h6 {
   color: #ffffff;
 }
-figure img {
-  margin-bottom: 15px;
-}
 figure figcaption {
   color: rgba(255, 255, 255, 0.75);
-  margin-bottom: 15px;
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.4;
@@ -5162,6 +5158,19 @@ section header {
 #home--about_wrapper #home--about_bg:hover {
   opacity: .75;
 }
+#home--story figure img {
+  margin-bottom: 15px;
+}
+#home--story figure figcaption {
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+#home--story figure:hover figcaption {
+  color: #ffffff;
+}
 @media screen and (min-width: 980px) {
   #home--videos .video-wrapper {
     margin-bottom: 50px;
@@ -5371,6 +5380,9 @@ section header {
 }
 #spinner--tabs-content .tab .wrapper {
   padding: 25px;
+}
+#spinner--tabs-content .tab .wrapper p {
+  color: #666666;
   font-size: 14px;
   font-size: 0.875rem;
 }

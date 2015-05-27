@@ -2,6 +2,7 @@
 // @codekit-prepend "_abouthover.js"
 // @codekit-prepend "_smoothscroll.js"
 // @codekit-prepend "_socialcarousel.js"
+// @codekit-prepend "_popupgallery.js"
 
 function randomInit(){
 
@@ -54,6 +55,7 @@ $(document).ready(function(){
   headerjunk();
   aboutHover();
   socialCarousels();
+  popupGallery();
 
   $(".gps_ring").click(function(){
     canOverlay();
