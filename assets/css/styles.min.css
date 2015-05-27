@@ -3936,6 +3936,21 @@ img.rounded {
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
 }
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.table {
+  display: table;
+}
+.table .cell {
+  display: table-cell;
+}
+.fs-row.nomargin {
+  width: 100%;
+  margin: auto;
+}
 *,
 *:link,
 *:visited,
@@ -4337,6 +4352,7 @@ html {
   height: 100%;
   background: #000000;
   color: #ffffff;
+  overflow: visible;
 }
 a {
   color: #ffffff;
@@ -4384,6 +4400,26 @@ hr.vertical-nav-line {
   width: 2px;
   height: 150px;
   opacity: .5;
+}
+section header {
+  margin-bottom: 25px;
+}
+.section-title {
+  font-family: "futura-pt";
+  font-size: 15px;
+  font-size: 0.9375rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-weight: 900;
+}
+.section-title span {
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  display: inline-block;
+  padding-top: 4px;
+}
+.section-content {
+  margin-bottom: 125px;
 }
 .spinner-thing {
   width: 30px;
@@ -4483,12 +4519,14 @@ hr.vertical-nav-line {
 }
 @media screen and (min-width: 980px) {
   #home--can_nav {
-    margin-bottom: 75px;
+    margin-top: 25px;
+    margin-bottom: 25px;
   }
 }
 @media screen and (min-width: 1220px) {
   #home--can_nav {
-    margin-bottom: 175px;
+    margin-top: 50px;
+    margin-bottom: 125px;
   }
 }
 #home--can_nav.banner--clone {
@@ -4510,6 +4548,75 @@ hr.vertical-nav-line {
   -webkit-transform: translateY(0%);
   -ms-transform: translateY(0%);
   transform: translateY(0%);
+}
+#home--about_wrapper {
+  position: relative;
+}
+#home--about_wrapper > div {
+  position: relative;
+  z-index: 3;
+}
+#home--about_wrapper #home--view-gallery {
+  z-index: 5;
+}
+#home--about_wrapper #home--view-gallery a {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #ffffff;
+  font-family: "futura-pt";
+  font-size: 15px;
+  font-size: 0.9375rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 12px;
+  font-size: 0.75rem;
+  text-decoration: underline;
+  padding: 0 10px;
+  height: 40px;
+  line-height: 40px;
+}
+#home--about_wrapper #home--view-gallery a:before {
+  margin-right: 8px;
+}
+#home--about_wrapper #home--about_bg {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: url('/assets/img/warriorsbg.jpg') 10px center no-repeat;
+  background-size: contain;
+  z-index: 1;
+  opacity: .5;
+}
+#home--about_wrapper #home--about_bg:hover {
+  opacity: .75;
+}
+@media screen and (min-width: 980px) {
+  #home--videos .video-wrapper {
+    margin-bottom: 50px;
+  }
+}
+#home--videos .video-wrapper iframe {
+  display: block;
+}
+#home--videos .video-wrapper .table {
+  height: 100%;
+  width: 100%;
+}
+#home--videos .video-wrapper .table .cell {
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+}
+#actual--gallery:hover figure {
+  opacity: .5;
+}
+#actual--gallery:hover figure:hover {
+  opacity: 1;
 }
 #spinner--container .can {
   position: relative;

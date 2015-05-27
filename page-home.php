@@ -2,58 +2,163 @@
 
 <div id="home--wrapper">
 
-<section id="home--can" class="scroll-header">
-  <div class="fs-row">
-    <div class="fs-cell fs-lg-10 fs-md-6 fs-sm-3 fs-centered">
-      <div class="fs-row">
-        <div id="home--can_info"   class="fs-cell fs-lg-8 fs-md-4 fs-sm-3 fs-right">
-          <nav id="home--can_nav">
-            <a class="btn btn-link btn-first" href="#">The Can</a>
-            <a class="btn btn-link" href="#">Mission</a>
-            <a class="btn btn-link" href="#">Videos</a>
-            <a class="btn btn-link" href="#">#warriorscan</a>
-            <div class="right">
-              <a class="btn btn-link ss-gizmo ss-facebook"  href="#">F</a>
-              <a class="btn btn-link ss-gizmo ss-twitter"   href="#">T</a>
-              <a class="btn btn-link ss-gizmo ss-instagram" href="#">I</a>
-            </div>
-          </nav>
-          <header id="home--can_title">
-            <h1>Inked by<br>The <span>Warriors</span></h1>
-            <h3>We're launching the brand new custom can.</h3>
-            <a class="navigate-icon" href="#home--about"><i class="ss-gizmo ss-icon">navigatedown</i></a>
-            <hr class="vertical-nav-line" />
-          </header>
-        </div><!-- Home Can Info -->
-        <div id="home--can_spinner" class="fs-cell fs-lg-3 fs-md-2 fs-sm-3">
-          <?php include locate_template('parts/home/can.php'); ?>
+  <section id="home--can" class="scroll-header">
+    <div class="fs-row">
+      <div class="fs-cell fs-lg-10 fs-md-6 fs-sm-3 fs-centered">
+        <div class="fs-row">
+          <div id="home--can_info"   class="fs-cell fs-lg-8 fs-md-4 fs-sm-3 fs-right">
+            <nav id="home--can_nav">
+              <a class="btn btn-link btn-first" href="#">The Can</a>
+              <a class="btn btn-link" href="#">Mission</a>
+              <a class="btn btn-link" href="#">Videos</a>
+              <a class="btn btn-link" href="#">#warriorscan</a>
+              <div class="right">
+                <a class="btn btn-link ss-gizmo ss-facebook"  href="#">F</a>
+                <a class="btn btn-link ss-gizmo ss-twitter"   href="#">T</a>
+                <a class="btn btn-link ss-gizmo ss-instagram" href="#">I</a>
+              </div>
+            </nav>
+            <header id="home--can_title">
+              <h1><?php the_field('intro--headline'); ?></h1>
+              <h3><?php the_field('intro--sub-headline'); ?></h3>
+              <?php the_field('intro--teaser'); ?>
+              <a class="navigate-icon" href="#home--about"><i class="ss-gizmo ss-icon">navigatedown</i></a>
+              <hr class="vertical-nav-line" />
+            </header>
+          </div><!-- Home Can Info -->
+          <div id="home--can_spinner" class="fs-cell fs-lg-3 fs-md-2 fs-sm-3">
+            <?php include locate_template('parts/home/can.php'); ?>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="home--about">
-  <div class="fs-row">
-    <div class="fs-cell fs-lg-10 fs-md-6 fs-sm-3 fs-centered">
-      <div class="fs-row">
-        <div id="home--about_info"   class="fs-cell fs-lg-8 fs-md-6 fs-sm-3 fs-right">
-          <header id="home--about_title">
-            <hr class="vertical-nav-line" />
-            <hr class="vertical-nav-line" />
-            <hr class="vertical-nav-line" />
-            <hr class="vertical-nav-line" />
-            <hr class="vertical-nav-line" />
-            <hr class="vertical-nav-line" />
-            <hr class="vertical-nav-line" />
-          </header>
-        </div><!-- Home Can Info -->
+  <section id="home--about">
+    <div class="fs-row">
+      <div class="fs-cell fs-lg-10 fs-md-6 fs-sm-3 fs-centered">
+        <div id="home--about_wrapper" class="fs-row">
+          <div id="home--about_info"   class="fs-cell fs-lg-8 fs-md-6 fs-sm-3 fs-right sized">
+            <header id="home--about_title">
+              <hr class="vertical-nav-line" />
+              <h5 class="section-title"><span>Mission</span></h5>
+            </header>
+            <div class="section-content">
+              <?php the_field('mission'); ?>
+            </div>
+          </div><!-- Home Can Info -->
+          <div id="home--view-gallery" class="fs-cell fs-lg-4 fs-md-6 fs-sm-3s sized">
+            <a href="#home--gallery" class="ss-glyphish ss-plus">View the Gallery</a>
+          </div>
+          <div id="home--about_bg"></div>
+        </div><!-- Row -->
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <section id="home--gallery">
+    <div class="fs-row">
+      <div class="fs-cell fs-lg-10 fs-md-6 fs-sm-3 fs-centered">
+        <div class="fs-row">
+          <div id="home--gallery_info"   class="fs-cell fs-lg-8 fs-md-6 fs-sm-3 fs-right">
+            <header id="home--gallery_title">
+              <hr class="vertical-nav-line" />
+              <h5 class="section-title"><span>Gallery</span></h5>
+              <p><?php the_field('gallery_description'); ?></p>
+            </header>
+          </div><!-- Home Can Info -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="actual--gallery" class="fs-grid fs-grid-fluid">
+    <div class="fs-row nomargin">
+      <?php include locate_template('parts/home/gallery.php' ); ?>
+    </div>
+  </section>
+
+  <section id="home--story">
+    <div class="fs-row">
+      <div class="fs-cell fs-lg-10 fs-md-6 fs-sm-3 fs-centered">
+        <div class="fs-row">
+          <div id="home--story_info"   class="fs-cell fs-lg-8 fs-md-6 fs-sm-3 fs-right">
+            <header id="home--story_title">
+              <hr class="vertical-nav-line" />
+              <h5 class="section-title"><span>Story</span></h5>
+            </header>
+          </div><!-- Home Story Info -->
+          <hr class="invisible">
+          <div id="home--story_content" class="fs-cell section-content fs-lg-8 fs-md-6 fs-sm-3 fs-right">
+            <?php the_field('projectstory'); ?>
+          </div>
+          <aside class="fs-cell fs-lg-3 fs-md-hide fs-sm-3">
+            <hr class="invisible">
+            <hr class="invisible">
+            <hr class="invisible">
+            <hr class="invisible">
+            <hr class="invisible">
+            <hr class="invisible">
+            <figure>
+              <img src="/assets/img/warriorsbg.jpg" class="img-responsive" />
+              <figcaption>
+                Sed ac libero tincidunt, dapibus sem ut, volutpat sapien. Quisque at
+                varius ipsum. Aenean vitae massa id dolor ullamcorper viverra eu ac
+                libero. Sed malesuada mollis semper.
+              </figcaption>
+            </figure>
+          </aside>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <?php
+
+    // Might be useful for videos
+    // http://sourcey.com/youtube-html5-embed-from-url-with-php/
+
+  ?>
+
+  <section id="home--videos">
+    <div class="fs-row">
+      <div class="fs-cell fs-lg-10 fs-md-6 fs-sm-3 fs-centered">
+        <div class="fs-row">
+          <div id="home--videos_info"   class="fs-cell fs-lg-8 fs-md-6 fs-sm-3 fs-right">
+            <header id="home--videos_title">
+              <hr class="vertical-nav-line" />
+              <h5 class="section-title"><span>Videos</span></h5>
+              <?php the_field('videos_description'); ?>
+            </header>
+          </div><!-- Home Videos Info -->
+        </div>
+        <div id="home--video_content" class="fs-row">
+          <?php include locate_template('parts/home/videos.php'); ?>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="home--social">
+    <div class="fs-row">
+      <div class="fs-cell fs-lg-10 fs-md-6 fs-sm-3 fs-centered">
+        <div class="fs-row">
+          <div id="home--social_info"   class="fs-cell fs-lg-8 fs-md-6 fs-sm-3 fs-right">
+            <header id="home--social_title">
+              <hr class="vertical-nav-line" />
+              <h5 class="section-title"><span>#warriorscan</span></h5>
+              <p><?php the_field('videos_description'); ?></p>
+            </header>
+          </div><!-- Home Can Info -->
+        </div>
+      </div>
+    </div>
+  </section>
 
 </div>
+
+<?php // Leave this stuff alone ?>
 
 <div id="spinner--overlay">
   <a id="spinner--overlay_close" class="right"><i class="ss-gizmo ss-icon">plus</i></a>

@@ -2,6 +2,7 @@ body,html {
   height: 100%;
   background: @black100;
   color: @white;
+  overflow: visible;
 }
 
 a {
@@ -59,6 +60,33 @@ hr {
 
 }
 
+section {
+
+  header {
+    margin-bottom: @spaced;
+  }
+
+}
+
+.section-title {
+
+  text-transform: uppercase;
+  .futuraNav();
+  font-weight: 900;
+
+  span {
+
+    border-top: 2px solid @white50;
+    display: inline-block;
+    padding-top: 4px;
+
+  }
+
+}
+
+.section-content {
+  margin-bottom: @spaced*5;
+}
 
 .spinner-thing {
   width: 30px;

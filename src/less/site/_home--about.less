@@ -1,0 +1,50 @@
+#home--about_wrapper {
+
+  position: relative;
+
+  > div {
+
+    position: relative;
+    z-index: 3;
+
+  }
+
+  #home--view-gallery {
+    z-index: 5;
+
+    a {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      color: @white;
+      .futuraNav();
+      .font_size(12);
+      text-decoration: underline;
+      padding: 0 10px;
+      height: 40px;
+      line-height: 40px;
+
+
+      &:before {
+        margin-right: 8px;
+      }
+
+    }
+  }
+
+  #home--about_bg {
+
+    .cover();
+    background: url('/assets/img/warriorsbg.jpg') 10px center no-repeat;
+    background-size: contain;
+    z-index: 1;
+    opacity: .5;
+
+    &:hover {
+      opacity: .75;
+    }
+
+  }
+
+}

@@ -139,3 +139,34 @@ img.rounded {
 .transition(){
   transition: 300ms ease;
 }
+
+.clearfix {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+.table {
+
+  display: table;
+
+  .cell {
+
+    display: table-cell;
+
+  }
+
+}
+
+.fs-row {
+
+  &.nomargin {
+
+    width: 100%;
+    margin: auto;
+
+  }
+
+}

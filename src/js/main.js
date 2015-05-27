@@ -9,6 +9,7 @@
 // @codekit-prepend "../bower_components/formstone/dist/js/navigation.js"
 // @codekit-prepend "../bower_components/formstone/dist/js/cookie.js"
 // @codekit-prepend "../bower_components/formstone/dist/js/tabs.js"
+// @codekit-prepend "../bower_components/formstone/dist/js/equalize.js"
 
 // Other Plugins
 
@@ -17,3 +18,4 @@
 // @codekit-prepend "../bower_components/magnific-popup/dist/jquery.magnific-popup.min.js"
 // @codekit-prepend "../bower_components/threesixty-slider/dist/threesixty.min.js"
 // @codekit-prepend "../bower_components/headhesive.js/dist/headhesive.js"
+// @codekit-prepend "../bower_components/FitVids/jquery.fitvids.js"

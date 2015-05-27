@@ -1,4 +1,15 @@
-// @codekit-append "og.js"
+// @codekit-prepend "og.js"
+// @codekit-prepend "_abouthover.js"
+
+function randomInit(){
+
+  $("#home--about_wrapper, .video-wrapper").equalize({
+    target: ".sized"
+  });
+
+  $(".video-wrapper").fitVids();
+
+}
 
 function canOverlay(){
 
@@ -34,7 +45,9 @@ function headerjunk(){
 
 $(document).ready(function(){
 
+  randomInit();
   headerjunk();
+  aboutHover();
 
   $(".gps_ring").click(function(){
     canOverlay();
