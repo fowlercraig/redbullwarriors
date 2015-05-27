@@ -7,6 +7,8 @@
     color: @white;
     font-weight: normal;
     margin: 0 -2px;
+    border-bottom: 1px solid transparent;
+    border-radius: 0;
 
     @media @tablet {
       padding: 0 5px;
@@ -14,6 +16,12 @@
 
     @media @desktop {
       padding: 0 8px;
+    }
+
+    &:hover {
+
+      border-bottom-color: @white50;
+
     }
 
   }
@@ -55,6 +63,22 @@
     -webkit-transform:translateY(0%);
     -ms-transform:translateY(0%);
     transform:translateY(0%)
+  }
+
+  .right {
+
+    .btn {
+
+      .font_size(18);
+      padding: 0 2px;
+
+      &:before {
+        position: relative;
+        top: .135em;
+      }
+
+    }
+
   }
 
 }

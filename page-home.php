@@ -2,7 +2,7 @@
 
 <div id="home--wrapper">
 
-  <?php $mainWidth = 'fs-lg-11'; ?>
+  <?php $mainWidth = 'fs-lg-10'; ?>
 
   <section id="home--can" class="scroll-header">
     <div class="fs-row">
@@ -17,9 +17,9 @@
               <a class="btn btn-link" href="#home--videos">Videos</a>
               <a class="btn btn-link" href="#home--social">#warriorscan</a>
               <div class="right">
-                <a class="btn btn-link ss-gizmo ss-facebook"  href="#">F</a>
-                <a class="btn btn-link ss-gizmo ss-twitter"   href="#">T</a>
-                <a class="btn btn-link ss-gizmo ss-instagram" href="#">I</a>
+                <a class="btn btn-link ss-social-circle ss-facebook"  href="#"></a>
+                <a class="btn btn-link ss-social-circle ss-twitter"   href="#"></a>
+                <a class="btn btn-link ss-social-circle ss-instagram" href="#"></a>
               </div>
             </nav>
             <header id="home--can_title">
