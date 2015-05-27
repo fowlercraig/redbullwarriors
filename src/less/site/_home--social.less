@@ -1,5 +1,16 @@
 #home--social {
 
+  #tw-carousel-1 {
+    background: url('/assets/img/social-bg-1.png');
+    background-size: cover;
+    text-align: left;
+  }
+
+  #tw-carousel-2 {
+    background: url('/assets/img/social-bg-2.png');
+    background-size: cover;
+  }
+
   #social--slider {
 
     a {
@@ -23,7 +34,7 @@
 
   }
 
-  article {
+  div {
 
     img {
       .img-responsive()!important;
@@ -41,7 +52,6 @@
 
     &.tweet {
 
-      background: #333;
       color: @white;
       position: relative;
       .font_size(24);
@@ -80,16 +90,6 @@
 
       .tweet-wrapper {
         .cover();
-      }
-
-      &:first-child {
-        background: url('/assets/img/social-bg-1.png');
-        background-size: cover;
-      }
-
-      &:last-child {
-        background: url('/assets/img/social-bg-2.png');
-        background-size: cover;
       }
 
     }

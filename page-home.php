@@ -155,8 +155,8 @@
               <h5 class="section-title">
                 <span>#warriorscan</span>
                 <menu id="social--slider" class="right">
-                  <a href="#" class="btn-right"><i class="ss-gizmo ss-icon">navigateleft</i></a>
-                  <a href="#" class="btn-left"><i class="ss-gizmo ss-icon">navigateright</i></a>
+                  <a class="btn-left"><i class="ss-gizmo ss-icon">navigateleft</i></a>
+                  <a class="btn-right"><i class="ss-gizmo ss-icon">navigateright</i></a>
                 </menu>
               </h5>
               <p><?php the_field('videos_description'); ?></p>
@@ -164,11 +164,17 @@
           </div><!-- Home Can Info -->
           <div id="home--social_content" class="fs-cell fs-lg-12 fs-md-6 fs-sm-3">
 
-              <?php include locate_template('parts/home/social_tw-1.php' ); ?>
+              <div id="tw-carousel-1" dir="rtl" class="fs-cell fs-lg-6 fs-md-6 fs-sm-3 fs-contained">
+                <?php include locate_template('parts/home/social_tw-1.php' ); ?>
+              </div>
+
               <?php include locate_template('parts/home/social_ig-1.php' ); ?>
               <div class="clearfix"></div>
               <?php include locate_template('parts/home/social_ig-2.php' ); ?>
-              <?php include locate_template('parts/home/social_tw-2.php' ); ?>
+
+              <div id="tw-carousel-2" class="fs-cell fs-lg-6 fs-md-6 fs-sm-3 fs-contained">
+                <?php include locate_template('parts/home/social_tw-2.php' ); ?>
+              </div>
 
           </div>
         </div>
