@@ -10,6 +10,7 @@
   }
   add_action( 'init', 'register_my_menu' );
   add_theme_support( 'post-thumbnails' );
+  add_theme_support( 'post-formats', array( 'quote', 'image' ) );
 
   function create_social() {
 
