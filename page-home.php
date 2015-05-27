@@ -2,16 +2,20 @@
 
 <div id="home--wrapper">
 
+  <?php $mainWidth = 'fs-lg-11'; ?>
+
   <section id="home--can" class="scroll-header">
     <div class="fs-row">
-      <div class="fs-cell fs-lg-10 fs-md-6 fs-sm-3 fs-centered">
+      <div class="fs-cell <?php echo $mainWidth; ?> fs-md-6 fs-sm-3 fs-centered">
         <div class="fs-row">
           <div id="home--can_info"   class="fs-cell fs-lg-8 fs-md-4 fs-sm-3 fs-right">
             <nav id="home--can_nav">
               <a class="btn btn-link btn-first" href="#">The Can</a>
-              <a class="btn btn-link" href="#">Mission</a>
-              <a class="btn btn-link" href="#">Videos</a>
-              <a class="btn btn-link" href="#">#warriorscan</a>
+              <a class="btn btn-link" href="#home--about">Mission</a>
+              <a class="btn btn-link" href="#home--gallery">Gallery</a>
+              <a class="btn btn-link" href="#home--story">The Story</a>
+              <a class="btn btn-link" href="#home--videos">Videos</a>
+              <a class="btn btn-link" href="#home--social">#warriorscan</a>
               <div class="right">
                 <a class="btn btn-link ss-gizmo ss-facebook"  href="#">F</a>
                 <a class="btn btn-link ss-gizmo ss-twitter"   href="#">T</a>
@@ -36,7 +40,7 @@
 
   <section id="home--about">
     <div class="fs-row">
-      <div class="fs-cell fs-lg-10 fs-md-6 fs-sm-3 fs-centered">
+      <div class="fs-cell <?php echo $mainWidth; ?> fs-md-6 fs-sm-3 fs-centered">
         <div id="home--about_wrapper" class="fs-row">
           <div id="home--about_info"   class="fs-cell fs-lg-8 fs-md-6 fs-sm-3 fs-right sized">
             <header id="home--about_title">
@@ -58,7 +62,7 @@
 
   <section id="home--gallery">
     <div class="fs-row">
-      <div class="fs-cell fs-lg-10 fs-md-6 fs-sm-3 fs-centered">
+      <div class="fs-cell <?php echo $mainWidth; ?> fs-md-6 fs-sm-3 fs-centered">
         <div class="fs-row">
           <div id="home--gallery_info"   class="fs-cell fs-lg-8 fs-md-6 fs-sm-3 fs-right">
             <header id="home--gallery_title">
@@ -80,7 +84,7 @@
 
   <section id="home--story">
     <div class="fs-row">
-      <div class="fs-cell fs-lg-10 fs-md-6 fs-sm-3 fs-centered">
+      <div class="fs-cell <?php echo $mainWidth; ?> fs-md-6 fs-sm-3 fs-centered">
         <div class="fs-row">
           <div id="home--story_info"   class="fs-cell fs-lg-8 fs-md-6 fs-sm-3 fs-right">
             <header id="home--story_title">
@@ -123,7 +127,7 @@
 
   <section id="home--videos">
     <div class="fs-row">
-      <div class="fs-cell fs-lg-10 fs-md-6 fs-sm-3 fs-centered">
+      <div class="fs-cell <?php echo $mainWidth; ?> fs-md-6 fs-sm-3 fs-centered">
         <div class="fs-row">
           <div id="home--videos_info"   class="fs-cell fs-lg-8 fs-md-6 fs-sm-3 fs-right">
             <header id="home--videos_title">
@@ -142,7 +146,7 @@
 
   <section id="home--social">
     <div class="fs-row">
-      <div class="fs-cell fs-lg-10 fs-md-6 fs-sm-3 fs-centered">
+      <div class="fs-cell <?php echo $mainWidth; ?> fs-md-6 fs-sm-3 fs-centered">
         <div class="fs-row">
           <div id="home--social_info"   class="fs-cell fs-lg-8 fs-md-6 fs-sm-3 fs-right">
             <header id="home--social_title">
@@ -164,7 +168,7 @@
   <a id="spinner--overlay_close" class="right"><i class="ss-gizmo ss-icon">plus</i></a>
   <div class="fs-grid">
     <div class="fs-row">
-      <div class="fs-cell fs-lg-10 fs-centered">
+      <div class="fs-cell <?php echo $mainWidth; ?> fs-centered">
         <div class="fs-row">
           <div class="fs-cell fs-lg-8 fs-md-6 fs-sm-3 fs-right">
             <?php include locate_template('/parts/home/tabs.php'); ?>

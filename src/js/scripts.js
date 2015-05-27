@@ -1,5 +1,6 @@
 // @codekit-prepend "og.js"
 // @codekit-prepend "_abouthover.js"
+// @codekit-prepend "_smoothscroll.js"
 
 function randomInit(){
 
@@ -36,7 +37,10 @@ function headerjunk(){
       clone:   'banner--clone',
       stick:   'banner--stick',
       unstick: 'banner--unstick'
-    }
+    },
+    onInit: function() {
+      smoothScroll();
+    },
   };
   var banner = new Headhesive('#home--can_nav', options);
 
