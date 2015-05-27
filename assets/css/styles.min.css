@@ -4872,10 +4872,12 @@ p {
   font-size: 18px;
   font-size: 1.125rem;
 }
-p a {
+p a,
+p a:visted {
   color: #ffffff;
 }
-p a:hover {
+p a:hover,
+p a:visted:hover {
   color: #ffffff;
 }
 h1,
