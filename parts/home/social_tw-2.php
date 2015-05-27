@@ -2,8 +2,8 @@
 
   $args = array (
 
-    'posts_per_page' => 1,
-    'offset'         => 4,
+    'posts_per_page' => 3,
+    'offset'         => 3,
     'paged'          => $paged,
     'post_type'      => 'social',
     'tax_query'      => array(

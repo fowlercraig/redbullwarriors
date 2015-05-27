@@ -5,6 +5,10 @@ body,html {
   overflow: visible;
 }
 
+#home--wrapper {
+  padding-bottom: @spaced*4;
+}
+
 .wrapper {
   padding: @spaced;
 }
@@ -13,8 +17,44 @@ a {
   color: @white;
 }
 
+p {
+
+  color: @white75;
+  line-height: 1.5;
+  .font_size(18);
+
+  a {
+    color: @white;
+    &:hover {
+      color: @white;
+    }
+  }
+
+}
+
 h1,h2,h3,h4,h5,h6 {
   color: @white;
+}
+
+figure {
+
+  img {
+    margin-bottom: 15px;
+  }
+
+  figcaption {
+    color: @white75;
+    margin-bottom: 15px;
+    .font_size(14);
+    line-height: 1.4;
+  }
+
+  &:hover {
+    figcaption {
+      color: @white;
+    }
+  }
+
 }
 
 .navigate-icon {

@@ -10,7 +10,8 @@
         <div class="fs-row">
           <div id="home--can_info"   class="fs-cell fs-lg-8 fs-md-4 fs-sm-3 fs-right">
             <nav id="home--can_nav">
-              <a class="btn btn-link btn-first" href="#">The Can</a>
+              <a class="btn btn-link btn-first hide" href="#home--can"><?php the_field('intro--headline'); ?></a>
+              <a class="btn btn-link btn-first" href="#home--can">The Can</a>
               <a class="btn btn-link" href="#home--about">Mission</a>
               <a class="btn btn-link" href="#home--gallery">Gallery</a>
               <a class="btn btn-link" href="#home--story">The Story</a>
@@ -151,18 +152,24 @@
           <div id="home--social_info"   class="fs-cell fs-lg-8 fs-md-6 fs-sm-3 fs-right">
             <header id="home--social_title">
               <hr class="vertical-nav-line" />
-              <h5 class="section-title"><span>#warriorscan</span></h5>
+              <h5 class="section-title">
+                <span>#warriorscan</span>
+                <menu id="social--slider" class="right">
+                  <a href="#" class="btn-right"><i class="ss-gizmo ss-icon">navigateleft</i></a>
+                  <a href="#" class="btn-left"><i class="ss-gizmo ss-icon">navigateright</i></a>
+                </menu>
+              </h5>
               <p><?php the_field('videos_description'); ?></p>
             </header>
           </div><!-- Home Can Info -->
           <div id="home--social_content" class="fs-cell fs-lg-12 fs-md-6 fs-sm-3">
-            <div class="fs-row">
+
               <?php include locate_template('parts/home/social_tw-1.php' ); ?>
               <?php include locate_template('parts/home/social_ig-1.php' ); ?>
               <div class="clearfix"></div>
               <?php include locate_template('parts/home/social_ig-2.php' ); ?>
               <?php include locate_template('parts/home/social_tw-2.php' ); ?>
-            </div>
+
           </div>
         </div>
       </div>

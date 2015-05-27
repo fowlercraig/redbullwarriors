@@ -4,6 +4,7 @@
   add_image_size( 'gallery-sm', 320 , 320, true );
   add_image_size( 'gallery-lg', 1280, 720, true );
   add_image_size( 'gallery-lg', 1280, 720, true );
+  add_image_size( 'hotspot-lg', 800,  371, true );
 
   function register_my_menu() {
     register_nav_menu('main-menu',__( 'Main Menu' ));

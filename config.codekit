@@ -2042,6 +2042,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/social-bg-1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 49191,
+		"inputAbbreviatedPath": "\/assets\/img\/social-bg-1.png",
+		"outputAbbreviatedPath": "\/assets\/img\/social-bg-1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/social-bg-2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 53651,
+		"inputAbbreviatedPath": "\/assets\/img\/social-bg-2.png",
+		"outputAbbreviatedPath": "\/assets\/img\/social-bg-2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/tab-image.png": {
 		"fileType": 32768,
 		"ignore": 0,
