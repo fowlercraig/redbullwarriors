@@ -9,6 +9,22 @@ body,html {
   padding-bottom: @spaced*4;
 }
 
+#home--gallery,
+#home--story,
+#home--videos,
+#home--social {
+
+  background: url('/assets/img/bg-background.png') top center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  &.static {
+    background-attachment: scroll
+  }
+
+
+}
+
 .wrapper {
   padding: @spaced;
 }

@@ -51,6 +51,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/assets\/img\/bg-background.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 35524,
+		"inputAbbreviatedPath": "\/assets\/img\/bg-background.png",
+		"outputAbbreviatedPath": "\/assets\/img\/bg-background.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/png-8\/warriors-1.png": {
 		"fileType": 32768,
 		"ignore": 0,

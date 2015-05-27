@@ -61,7 +61,7 @@
     </div>
   </section>
 
-  <section id="home--gallery">
+  <section id="home--gallery" class="static">
     <div class="fs-row">
       <div class="fs-cell <?php echo $mainWidth; ?> fs-md-6 fs-sm-3 fs-centered">
         <div class="fs-row">
