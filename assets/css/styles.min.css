@@ -4357,6 +4357,9 @@ html {
   color: #ffffff;
   overflow: visible;
 }
+.wrapper {
+  padding: 25px;
+}
 a {
   color: #ffffff;
 }
@@ -4634,6 +4637,32 @@ section header {
 }
 #actual--gallery:hover figure:hover {
   opacity: 1;
+}
+#home--social article img {
+  display: block !important;
+  max-width: 100% !important;
+  height: auto !important;
+}
+#home--social article.image br {
+  display: none;
+}
+#home--social article.tweet {
+  background: #333;
+  color: #ffffff;
+  position: relative;
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+#home--social article.tweet a {
+  color: inherit;
+  text-decoration: underline;
+}
+#home--social article.tweet .tweet-wrapper {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 #spinner--container .can {
   position: relative;

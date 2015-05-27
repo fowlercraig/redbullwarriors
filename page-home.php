@@ -155,6 +155,15 @@
               <p><?php the_field('videos_description'); ?></p>
             </header>
           </div><!-- Home Can Info -->
+          <div id="home--social_content" class="fs-cell fs-lg-12 fs-md-6 fs-sm-3">
+            <div class="fs-row">
+              <?php include locate_template('parts/home/social_tw-1.php' ); ?>
+              <?php include locate_template('parts/home/social_ig-1.php' ); ?>
+              <div class="clearfix"></div>
+              <?php include locate_template('parts/home/social_ig-2.php' ); ?>
+              <?php include locate_template('parts/home/social_tw-2.php' ); ?>
+            </div>
+          </div>
         </div>
       </div>
     </div>

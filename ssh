@@ -1,1 +1,3 @@
-ssh wearegiants.net@s147445.gridserver.com && cd domains/warriors.redbull.com/html/wp-content/themes/redbullwarriors
+ssh wearegiants.net@s147445.gridserver.com &&
+
+cd domains/warriors.redbull.com/html/wp-content/themes/redbullwarriors
