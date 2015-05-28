@@ -5,30 +5,21 @@
   position: relative;
   z-index: 120;
 
-  &#info--group_1 {
-    .gps_ring {
-      border-color: @rb-red;
-    }
-  }
 
-  &#info--group_2 {
-    display: none;
-    .gps_ring {
-      border-color: red;
-    }
-  }
+  .gps_ring, .gps_ring.fs-tabs-tab.fs-tabs-enabled {
 
-  &#info--group_3 {
-    display: none;
-    .gps_ring {
-      border-color: pink;
-    }
-  }
+    -webkit-border-radius: 30px;
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    -webkit-animation: pulsate 1s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    opacity: 1;
+    border: 5px solid;
 
-  .gps_ring {
-
-    &.fs-tabs-active, &.active {
-      border-color: @white!important;
+    &.fs-tabs-active.active {
+      border-color: @rb-red!important;
+      background: @rb-red;
     }
 
     &:nth-child(1) {
@@ -58,23 +49,36 @@
       top:  70px;
       display: none;
     }
+    &:active {
+      -webkit-transform: scale(2, 2);
+    }
   }
 
-}
+  &#info--group_1 {
+    .gps_ring {
+      border-color: @white;
+    }
+  }
 
-.gps_ring {
-  border: 5px solid #999;
-  -webkit-border-radius: 30px;
-  height: 30px;
-  width: 30px;
-  position: absolute;
-  -webkit-animation: pulsate 1s ease-out;
-  -webkit-animation-iteration-count: infinite;
-  opacity: 0.0
+  &#info--group_2 {
+    display: none;
+    .gps_ring {
+      border-color: red;
+    }
+  }
+
+  &#info--group_3 {
+    display: none;
+    .gps_ring {
+      border-color: pink;
+    }
+  }
+
+
 }
 
 @-webkit-keyframes pulsate {
   0% {-webkit-transform: scale(.5, .5); opacity: 0.0;}
   50% {opacity: 1.0;}
-  100% {-webkit-transform: scale(1, 1); opacity: 0.0;}
+  100% {-webkit-transform: scale(.8, .8); opacity: 0.0;}
 }

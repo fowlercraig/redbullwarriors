@@ -1,4 +1,5 @@
 // @codekit-prepend "og.js"
+// @codekit-prepend "_tabs.js"
 // @codekit-prepend "_abouthover.js"
 // @codekit-prepend "_smoothscroll.js"
 // @codekit-prepend "_socialcarousel.js"

@@ -1,14 +1,10 @@
 <?php Themewrangler::setup_page();get_header(); ?>
-<section id="content" role="main">
-<article id="post-0" class="post not-found">
-<header class="header">
-<h1 class="entry-title"><?php _e( 'Not Found', 'blankslate' ); ?></h1>
-</header>
-<section class="entry-content">
-<p><?php _e( 'Nothing found for the requested page. Try a search instead?', 'blankslate' ); ?></p>
-<?php get_search_form(); ?>
-</section>
-</article>
-</section>
-<?php get_sidebar(); ?>
+
+<div id="error-msg" class="fs-grid">
+  <div class="fs-cell fs-lg-6 fs-md-4 fs-sm-3 fs-centered text-center">
+    <h1>404</h1>
+    <h3>Sorry, nothing here. <a href="/">Go Home</a></h3>
+  </div>
+</div>
+
 <?php get_footer(); ?>

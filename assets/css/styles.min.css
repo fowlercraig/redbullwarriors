@@ -2017,6 +2017,114 @@
 	 * @type element
 	 * @description Target Element
 	 */
+/**
+	 * @class
+	 * @name .fs-tabs-element
+	 * @type element
+	 * @description Target elmement
+	 */
+/**
+	 * @class
+	 * @name .fs-tabs
+	 * @type element
+	 * @description Base widget class
+	 */
+/**
+	 * @class
+	 * @name .fs-tabs.fs-tabs-enabled
+	 * @type modifier
+	 * @description Indicates enabled state
+	 */
+.fs-tabs {
+  /**
+		 * @class
+		 * @name .fs-tabs-tab
+		 * @type element
+		 * @description Tab handle element
+		 */
+  /**
+		 * @class
+		 * @name .fs-tabs-tab.fs-tabs-enabled
+		 * @type modifier
+		 * @description Indicates enabled state
+		 */
+  /**
+		 * @class
+		 * @name .fs-tabs-tab.fs-tabs-active
+		 * @type modifier
+		 * @description Indicates active state
+		 */
+  /**
+		 * @class
+		 * @name .fs-tabs-tab.fs-tabs-mobile
+		 * @type modifier
+		 * @description Indicates mobile interface
+		 */
+  /**
+		 * @class
+		 * @name .fs-tabs-content
+		 * @type element
+		 * @description Tab content element
+		 */
+  /**
+		 * @class
+		 * @name .fs-tabs-content.fs-tabs-enabled
+		 * @type modifier
+		 * @description Indicates enabled state
+		 */
+  /**
+		 * @class
+		 * @name .fs-tabs-content.fs-tabs-active
+		 * @type modifier
+		 * @description Indicates active state
+		 */
+  /**
+		 * @class
+		 * @name .fs-tabs-tab_mobile
+		 * @type element
+		 * @description Mobile tab handle element
+		 */
+  /**
+		 * @class
+		 * @name .fs-tabs-tab_mobile.fs-tabs-active
+		 * @type modifier
+		 * @description Indicates active state
+		 */
+}
+.fs-tabs.fs-tabs-enabled:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+.fs-tabs-tab.fs-tabs-enabled {
+  box-sizing: border-box;
+  border: none;
+  cursor: pointer;
+}
+.fs-tabs-tab.fs-tabs-enabled:focus {
+  outline: none;
+}
+.fs-tabs-content.fs-tabs-enabled {
+  box-sizing: border-box;
+  display: none;
+}
+.fs-tabs-content.fs-tabs-enabled:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+.fs-tabs-content.fs-tabs-active {
+  display: block;
+}
+.fs-tabs-tab.fs-tabs-mobile,
+.fs-tabs-tab_mobile,
+.fs-tabs-tab_mobile.fs-tabs-active {
+  display: none;
+}
+.fs-tabs-tab_mobile.fs-tabs-mobile,
+.fs-tabs-tab_mobile.fs-tabs-mobile.fs-tabs-active {
+  display: block;
+}
 .threesixty {
   position: relative;
   overflow: hidden;
@@ -5000,6 +5108,29 @@ section header {
     -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
   }
 }
+.error404 #wrapper {
+  height: 100%;
+}
+.error404 #error-msg {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.error404 #error-msg h1 {
+  font-size: 100px;
+  font-size: 6.25rem;
+  margin-bottom: 0;
+}
+.error404 #error-msg h3 {
+  color: #ffffff;
+}
+.error404 #error-msg h3 a,
+.error404 #error-msg h3 a:visited {
+  color: #cc1c4a;
+}
 #home--can {
   background: url('/assets/img/site--bg.png') top center no-repeat;
   background-size: cover;
@@ -5393,11 +5524,8 @@ section header {
   -webkit-transition: 300ms ease;
           transition: 300ms ease;
 }
-#spinner--tabs-content .tab {
-  background: #ffffff;
-  border-radius: 3px;
-}
 #spinner--tabs-content .tab .wrapper {
+  background: #ffffff;
   padding: 25px;
 }
 #spinner--tabs-content .tab .wrapper p {
@@ -5430,8 +5558,61 @@ section header {
   position: relative;
   z-index: 120;
 }
+.hotspot-frame .gps_ring,
+.hotspot-frame .gps_ring.fs-tabs-tab.fs-tabs-enabled {
+  -webkit-border-radius: 30px;
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  -webkit-animation: pulsate 1s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  opacity: 1;
+  border: 5px solid;
+}
+.hotspot-frame .gps_ring.fs-tabs-active.active,
+.hotspot-frame .gps_ring.fs-tabs-tab.fs-tabs-enabled.fs-tabs-active.active {
+  border-color: #cc1c4a !important;
+  background: #cc1c4a;
+}
+.hotspot-frame .gps_ring:nth-child(1),
+.hotspot-frame .gps_ring.fs-tabs-tab.fs-tabs-enabled:nth-child(1) {
+  left: 50px;
+  top: 30px;
+}
+.hotspot-frame .gps_ring:nth-child(2),
+.hotspot-frame .gps_ring.fs-tabs-tab.fs-tabs-enabled:nth-child(2) {
+  left: 20px;
+  top: 40px;
+}
+.hotspot-frame .gps_ring:nth-child(3),
+.hotspot-frame .gps_ring.fs-tabs-tab.fs-tabs-enabled:nth-child(3) {
+  left: 120px;
+  top: 90px;
+}
+.hotspot-frame .gps_ring:nth-child(4),
+.hotspot-frame .gps_ring.fs-tabs-tab.fs-tabs-enabled:nth-child(4) {
+  left: 20px;
+  top: 60px;
+  display: none;
+}
+.hotspot-frame .gps_ring:nth-child(5),
+.hotspot-frame .gps_ring.fs-tabs-tab.fs-tabs-enabled:nth-child(5) {
+  left: 70px;
+  top: 50px;
+  display: none;
+}
+.hotspot-frame .gps_ring:nth-child(6),
+.hotspot-frame .gps_ring.fs-tabs-tab.fs-tabs-enabled:nth-child(6) {
+  left: 40px;
+  top: 70px;
+  display: none;
+}
+.hotspot-frame .gps_ring:active,
+.hotspot-frame .gps_ring.fs-tabs-tab.fs-tabs-enabled:active {
+  -webkit-transform: scale(2, 2);
+}
 .hotspot-frame#info--group_1 .gps_ring {
-  border-color: #cc1c4a;
+  border-color: #ffffff;
 }
 .hotspot-frame#info--group_2 {
   display: none;
@@ -5445,47 +5626,6 @@ section header {
 .hotspot-frame#info--group_3 .gps_ring {
   border-color: pink;
 }
-.hotspot-frame .gps_ring.fs-tabs-active,
-.hotspot-frame .gps_ring.active {
-  border-color: #ffffff !important;
-}
-.hotspot-frame .gps_ring:nth-child(1) {
-  left: 50px;
-  top: 30px;
-}
-.hotspot-frame .gps_ring:nth-child(2) {
-  left: 20px;
-  top: 40px;
-}
-.hotspot-frame .gps_ring:nth-child(3) {
-  left: 120px;
-  top: 90px;
-}
-.hotspot-frame .gps_ring:nth-child(4) {
-  left: 20px;
-  top: 60px;
-  display: none;
-}
-.hotspot-frame .gps_ring:nth-child(5) {
-  left: 70px;
-  top: 50px;
-  display: none;
-}
-.hotspot-frame .gps_ring:nth-child(6) {
-  left: 40px;
-  top: 70px;
-  display: none;
-}
-.gps_ring {
-  border: 5px solid #999;
-  -webkit-border-radius: 30px;
-  height: 30px;
-  width: 30px;
-  position: absolute;
-  -webkit-animation: pulsate 1s ease-out;
-  -webkit-animation-iteration-count: infinite;
-  opacity: 0;
-}
 @-webkit-keyframes pulsate {
   0% {
     -webkit-transform: scale(0.5, 0.5);
@@ -5495,7 +5635,7 @@ section header {
     opacity: 1.0;
   }
   100% {
-    -webkit-transform: scale(1, 1);
+    -webkit-transform: scale(0.8, 0.8);
     opacity: 0.0;
   }
 }

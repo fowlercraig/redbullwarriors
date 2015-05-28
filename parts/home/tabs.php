@@ -1,14 +1,16 @@
+
+
 <div id="spinner--tabs-content">
-                        <div class="tab">
-                          <div class="image"><img src="/assets/img/tab-image.png" class="img-responsive" /></div>
-                          <div class="wrapper">
-                            <p>
-                              Nullam quis risus eget urna mollis ornare vel eu leo. Lorem
-                              ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-                              commodo cursus magna, vel scelerisque nisl consectetur et.
-                              Praesent commodo cursus magna, vel scelerisque nisl
-                              consectetur et.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
+
+  <?php if( have_rows('hotspots_section-1') ): $counter = 1; while ( have_rows('hotspots_section-1') ) : the_row(); ?>
+  <div id="tab-<?php echo $counter;?>" class="tab">
+    <div class="inner">
+      <div class="image"><img src="/assets/img/tab-image.png" class="img-responsive" /></div>
+      <div class="wrapper">
+        <?php the_sub_field("description"); ?>
+      </div>
+    </div>
+  </div>
+  <?php $counter++; endwhile; endif; ?>
+
+</div>
