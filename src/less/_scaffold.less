@@ -14,14 +14,17 @@ body,html {
 #home--videos,
 #home--social {
 
-  background: url('/assets/img/bg-background.png') top center no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  @media @tablet {
 
-  &.static {
-    background-attachment: scroll
+    background: url('/assets/img/bg-background.png') top center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    &.static {
+      background-attachment: scroll
+    }
+
   }
-
 
 }
 
@@ -109,8 +112,15 @@ hr {
     margin: 0;
     margin-left: 24px;
     width: 2px;
-    height: 150px;
     opacity: .5;
+
+    @media @min {
+      height: 50px;
+    }
+
+    @media @tablet {
+      height: 150px;
+    }
   }
 
 }

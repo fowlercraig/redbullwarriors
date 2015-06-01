@@ -10,7 +10,25 @@
 
   margin-bottom: 0;
 
+  @media @min {
+    margin-top: @spaced;
+  }
+
+  @media @tablet {
+    margin-top: 0;
+  }
+
   h1 {
+
+    @media @min {
+      .font_size(40);
+      letter-spacing: -2px;
+    }
+
+    @media @mobile {
+      .font_size(50);
+      letter-spacing: -2px;
+    }
 
     @media @tablet {
       .font_size(79);

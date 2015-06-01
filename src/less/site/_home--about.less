@@ -12,6 +12,14 @@
   #home--view-gallery {
     z-index: 5;
 
+    @media @min {
+      float: right;
+    }
+
+    @media @tablet {
+      float: left;
+    }
+
     a {
       display: block;
       position: absolute;
@@ -36,10 +44,17 @@
   #home--about_bg {
 
     .cover();
-    background: url('/assets/img/warriorsbg.jpg') 10px center no-repeat;
     background-size: contain;
     z-index: 1;
     opacity: .5;
+
+    @media @min {
+      background: url('/assets/img/warriorsbg.jpg') center center no-repeat;
+    }
+
+    @media @desktop {
+      background: url('/assets/img/warriorsbg.jpg') 10px center no-repeat;
+    }
 
     &:hover {
       opacity: .75;

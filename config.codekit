@@ -4991,6 +4991,15 @@
 		"randomFootnoteNumbers": 0,
 		"useCompatibilityMode": 0
 		},
+	"\/src\/bower_components\/Formstone\/src\/css\/grid.ie.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/bower_components\/Formstone\/src\/css\/grid.ie.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/src\/bower_components\/Formstone\/src\/docs\/asap.html": {
 		"fileType": 8192,
 		"ignore": 1,

@@ -38,9 +38,13 @@
 
   }
 
-  margin-top: @spaced*3;
+  @media @mobile {
+    margin-top: @spaced*1;
+    margin-bottom: @spaced*2;
+  }
 
   @media @tablet {
+    margin-top: @spaced*3;
     margin-bottom: @spaced*2;
   }
 
@@ -183,3 +187,11 @@
 
 }
 
+#home--can_nav {
+  @media @min {
+    display: none;
+  }
+  @media @tablet {
+    display: block;
+  }
+}

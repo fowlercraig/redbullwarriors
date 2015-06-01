@@ -8,7 +8,10 @@
     <div class="fs-row">
       <div class="fs-cell <?php echo $mainWidth; ?> fs-md-6 fs-sm-3 fs-centered">
         <div class="fs-row">
-          <div id="home--can_info"   class="fs-cell fs-lg-8 fs-md-4 fs-sm-3 fs-right">
+          <div id="home--can_spinner" class="fs-cell fs-lg-3 fs-md-2 fs-sm-1">
+            <?php include locate_template('parts/home/can.php'); ?>
+          </div>
+          <div id="home--can_info"   class="fs-cell fs-lg-8 fs-md-4 fs-sm-2 fs-xs-2 fs-right">
             <nav id="home--can_nav"  class="site-nav">
               <a class="btn btn-link btn-first hide" href="#home--can"><?php the_field('intro--headline'); ?></a>
               <a class="btn btn-link btn-first" href="#home--can">The Can</a>
@@ -31,9 +34,6 @@
               <hr class="vertical-nav-line" />
             </header>
           </div><!-- Home Can Info -->
-          <div id="home--can_spinner" class="fs-cell fs-lg-3 fs-md-2 fs-sm-3">
-            <?php include locate_template('parts/home/can.php'); ?>
-          </div>
         </div>
       </div>
     </div>
@@ -43,7 +43,7 @@
     <div class="fs-row">
       <div class="fs-cell <?php echo $mainWidth; ?> fs-md-6 fs-sm-3 fs-centered">
         <div id="home--about_wrapper" class="fs-row">
-          <div id="home--about_info"   class="fs-cell fs-lg-8 fs-md-4 fs-sm-3 fs-right sized">
+          <div id="home--about_info"   class="fs-cell fs-lg-8 fs-md-4 fs-sm-2 fs-xs-2 fs-right sized">
             <header id="home--about_title">
               <hr class="vertical-nav-line" />
               <h5 class="section-title"><span>Mission</span></h5>
@@ -52,7 +52,7 @@
               <?php the_field('mission'); ?>
             </div>
           </div><!-- Home Can Info -->
-          <div id="home--view-gallery" class="fs-cell fs-lg-4 fs-md-2 fs-sm-3s sized">
+          <div id="home--view-gallery" class="fs-cell fs-lg-4 fs-md-2 fs-sm-2 sized">
             <a href="#home--gallery" class="ss-glyphish ss-plus">View the Gallery</a>
           </div>
           <div id="home--about_bg"></div>
@@ -72,7 +72,7 @@
     <div class="fs-row">
       <div class="fs-cell <?php echo $mainWidth; ?> fs-md-6 fs-sm-3 fs-centered">
         <div class="fs-row">
-          <div id="home--videos_info"   class="fs-cell fs-lg-8 fs-md-4 fs-sm-3 fs-right">
+          <div id="home--videos_info"   class="fs-cell fs-lg-8 fs-md-4 fs-sm-2 fs-xs-2 fs-right">
             <header id="home--videos_title">
               <hr class="vertical-nav-line" />
               <h5 class="section-title"><span>Videos</span></h5>
@@ -95,7 +95,7 @@
     <div class="fs-row">
       <div class="fs-cell <?php echo $mainWidth; ?> fs-md-6 fs-sm-3 fs-centered">
         <div class="fs-row">
-          <div id="home--story_info"   class="fs-cell fs-lg-8 fs-md-4 fs-sm-3 fs-right">
+          <div id="home--story_info"   class="fs-cell fs-lg-8 fs-md-4 fs-sm-2 fs-xs-2 fs-right">
             <header id="home--story_title">
               <hr class="vertical-nav-line" />
               <h5 class="section-title"><span>Story</span></h5>
@@ -131,7 +131,7 @@
     <div class="fs-row">
       <div class="fs-cell <?php echo $mainWidth; ?> fs-md-6 fs-sm-3 fs-centered">
         <div class="fs-row">
-          <div id="home--social_info"   class="fs-cell fs-lg-8 fs-md-4 fs-sm-3 fs-right">
+          <div id="home--social_info"   class="fs-cell fs-lg-8 fs-md-4 fs-sm-2 fs-xs-2 fs-right">
             <header id="home--social_title">
               <hr class="vertical-nav-line" />
               <h5 class="section-title">
@@ -178,7 +178,7 @@
     <div class="fs-row">
       <div class="fs-cell <?php echo $mainWidth; ?> fs-md-6 fs-sm-3 fs-centered">
         <div class="fs-row">
-          <div id="home--gallery_info"   class="fs-cell fs-lg-8 fs-md-4 fs-sm-3 fs-right">
+          <div id="home--gallery_info"   class="fs-cell fs-lg-8 fs-md-4 fs-sm-2 fs-xs-2 fs-right">
             <header id="home--gallery_title">
               <hr class="vertical-nav-line" />
               <h5 class="section-title"><span>Gallery</span></h5>
@@ -232,7 +232,7 @@
     <div class="fs-row">
       <div class="fs-cell <?php echo $mainWidth; ?> fs-centered">
         <div class="fs-row">
-          <div class="fs-cell fs-lg-8 fs-md-6 fs-sm-3 fs-right">
+          <div class="fs-cell fs-lg-8 fs-md-4 fs-sm-3 fs-right">
             <?php include locate_template('/parts/home/tabs.php'); ?>
           </div>
         </div>

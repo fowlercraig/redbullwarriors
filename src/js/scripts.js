@@ -8,7 +8,8 @@
 function randomInit(){
 
   $("#home--about_wrapper, .video-wrapper").equalize({
-    target: ".sized"
+    target: ".sized",
+    minWidth: '720px',
   });
 
   $(".video-wrapper").fitVids();
@@ -54,7 +55,9 @@ $(document).ready(function(){
 
   randomInit();
   headerjunk();
-  aboutHover();
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) { } else {
+    aboutHover();
+  }
   socialCarousels();
   popupGallery();
 

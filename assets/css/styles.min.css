@@ -6,7 +6,7 @@
  */
 .fs_grid_row,
 .fs-grid .fs-row {
-  width: 300px;
+  width: 953;
   margin-left: auto;
   margin-right: auto;
 }
@@ -4968,19 +4968,21 @@ html {
 #home--wrapper {
   padding-bottom: 100px;
 }
-#home--gallery,
-#home--story,
-#home--videos,
-#home--social {
-  background: url('/assets/img/bg-background.png') top center no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-#home--gallery.static,
-#home--story.static,
-#home--videos.static,
-#home--social.static {
-  background-attachment: scroll;
+@media screen and (min-width: 740px) {
+  #home--gallery,
+  #home--story,
+  #home--videos,
+  #home--social {
+    background: url('/assets/img/bg-background.png') top center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  #home--gallery.static,
+  #home--story.static,
+  #home--videos.static,
+  #home--social.static {
+    background-attachment: scroll;
+  }
 }
 .wrapper {
   padding: 25px;
@@ -5052,8 +5054,17 @@ hr.vertical-nav-line {
   margin: 0;
   margin-left: 24px;
   width: 2px;
-  height: 150px;
   opacity: .5;
+}
+@media screen and (min-width: 300px) {
+  hr.vertical-nav-line {
+    height: 50px;
+  }
+}
+@media screen and (min-width: 740px) {
+  hr.vertical-nav-line {
+    height: 150px;
+  }
 }
 section header {
   margin-bottom: 25px;
@@ -5226,8 +5237,32 @@ section header {
 #home--can_title {
   margin-bottom: 0;
 }
+@media screen and (min-width: 300px) {
+  #home--can_title {
+    margin-top: 25px;
+  }
+}
+@media screen and (min-width: 740px) {
+  #home--can_title {
+    margin-top: 0;
+  }
+}
 #home--can_title h1 {
   margin-bottom: 10px;
+}
+@media screen and (min-width: 300px) {
+  #home--can_title h1 {
+    font-size: 40px;
+    font-size: 2.5rem;
+    letter-spacing: -2px;
+  }
+}
+@media screen and (min-width: 500px) {
+  #home--can_title h1 {
+    font-size: 50px;
+    font-size: 3.125rem;
+    letter-spacing: -2px;
+  }
 }
 @media screen and (min-width: 740px) {
   #home--can_title h1 {
@@ -5262,7 +5297,6 @@ section header {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 500;
-  margin-top: 75px;
 }
 .site-nav .hide {
   display: none;
@@ -5295,8 +5329,15 @@ section header {
   color: #ffffff;
   border-bottom-color: rgba(255, 255, 255, 0.5);
 }
+@media screen and (min-width: 500px) {
+  .site-nav {
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
+}
 @media screen and (min-width: 740px) {
   .site-nav {
+    margin-top: 75px;
     margin-bottom: 50px;
   }
 }
@@ -5403,6 +5444,16 @@ section header {
   font-weight: 600;
   color: #ffffff;
 }
+@media screen and (min-width: 300px) {
+  #home--can_nav {
+    display: none;
+  }
+}
+@media screen and (min-width: 740px) {
+  #home--can_nav {
+    display: block;
+  }
+}
 #home--about_wrapper {
   position: relative;
 }
@@ -5412,6 +5463,16 @@ section header {
 }
 #home--about_wrapper #home--view-gallery {
   z-index: 5;
+}
+@media screen and (min-width: 300px) {
+  #home--about_wrapper #home--view-gallery {
+    float: right;
+  }
+}
+@media screen and (min-width: 740px) {
+  #home--about_wrapper #home--view-gallery {
+    float: left;
+  }
 }
 #home--about_wrapper #home--view-gallery a {
   display: block;
@@ -5441,10 +5502,19 @@ section header {
   position: absolute;
   top: 0;
   width: 100%;
-  background: url('/assets/img/warriorsbg.jpg') 10px center no-repeat;
   background-size: contain;
   z-index: 1;
   opacity: .5;
+}
+@media screen and (min-width: 300px) {
+  #home--about_wrapper #home--about_bg {
+    background: url('/assets/img/warriorsbg.jpg') center center no-repeat;
+  }
+}
+@media screen and (min-width: 980px) {
+  #home--about_wrapper #home--about_bg {
+    background: url('/assets/img/warriorsbg.jpg') 10px center no-repeat;
+  }
 }
 #home--about_wrapper #home--about_bg:hover {
   opacity: .75;
@@ -5740,9 +5810,23 @@ section header {
   display: none;
 }
 #spinner--tabs-content {
-  padding-top: 180px;
   -webkit-transition: 300ms ease;
           transition: 300ms ease;
+}
+@media screen and (min-width: 740px) {
+  #spinner--tabs-content {
+    padding-top: 180px;
+  }
+}
+@media screen and (min-width: 980px) {
+  #spinner--tabs-content {
+    padding-top: 130px;
+  }
+}
+@media screen and (min-width: 1220px) {
+  #spinner--tabs-content {
+    padding-top: 180px;
+  }
 }
 #spinner--tabs-content .tab .wrapper {
   background: #ffffff;
@@ -5758,9 +5842,6 @@ section header {
 }
 #spinner--tabs-content .tab .wrapper p:last-child {
   margin-bottom: 0;
-}
-.active #spinner--tabs-content {
-  padding-top: 175px;
 }
 .fs-tabs-content .inner {
   opacity: 0;

@@ -8,8 +8,23 @@
 
 #spinner--tabs-content {
 
-  padding-top: @spaced*7+5;
   .transition();
+
+  @media @min {
+
+  }
+
+  @media @tablet {
+    padding-top: @spaced*7+5;
+  }
+
+  @media @desktop {
+    padding-top: @spaced*5+5;
+  }
+
+  @media @max {
+    padding-top: @spaced*7+5;
+  }
 
   .tab {
 
@@ -43,7 +58,7 @@
 
   #spinner--tabs-content {
 
-    padding-top: @spaced*7;
+    // padding-top: @spaced*7;
 
   }
 
