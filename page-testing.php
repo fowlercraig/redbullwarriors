@@ -9,7 +9,7 @@
       <div class="fs-cell <?php echo $mainWidth; ?> fs-md-6 fs-sm-3 fs-centered">
         <div class="fs-row">
           <div id="home--can_info"   class="fs-cell fs-lg-8 fs-md-4 fs-sm-3 fs-right">
-            <nav id="home--can_nav"  class="site-nav">
+            <nav id="home--can_nav">
               <a class="btn btn-link btn-first hide" href="#home--can"><?php the_field('intro--headline'); ?></a>
               <a class="btn btn-link btn-first" href="#home--can">The Can</a>
               <a class="btn btn-link" href="#home--about">Mission</a>
@@ -38,32 +38,6 @@
       </div>
     </div>
   </section>
-
-  <footer id="home--footer">
-    <div class="fs-row">
-      <div class="fs-cell <?php echo $mainWidth; ?> fs-md-6 fs-sm-3 fs-centered">
-        <div class="fs-row">
-          <div id="footer--can_info"   class="fs-cell fs-lg-12 fs-md-6 fs-sm-3">
-            <nav id="footer--can_nav"  class="site-nav">
-              <a href='http://redbull.com/nz/en'><span class="logo">RedBull.com</span></a>
-              <a href='http://redbull.com/nz/en/data-privacy-policy' title='Privacy Policy' target='_blank'><span>Privacy Policy</span></a>
-              <a href='http://redbull.com/nz/en/terms-and-conditions' title='Terms & Conditions' target='_blank'><span>Terms & Conditions</span></a>
-              <a href='http://redbull.com/nz/en/imprint' title='Imprint' target='_blank'><span>Imprint</span></a>
-              <a href='http://redbull.com/nz/en/brand-protection' title='Brand Protection' target='_blank'><span>Brand Protection</span></a>
-              <a href='https://www.redbullcontentpool.com' title='Media' target='_blank'><span>Media</span></a>
-              <a href='http://energydrink-nz.redbull.com/contact' title='Contact Us' target='_blank'><span>Contact Us</span></a>
-              <a href='http://jobs.redbull.com/nz/en' title='Jobs' target='_blank'><span>Jobs</span></a>
-              <div class="right">
-                <a class="btn btn-link ss-social-circle ss-facebook"  href="#"></a>
-                <a class="btn btn-link ss-social-circle ss-twitter"   href="#"></a>
-                <a class="btn btn-link ss-social-circle ss-instagram" href="#"></a>
-              </div>
-            </nav>
-          </div><!-- Home Can Info -->
-        </div>
-      </div>
-    </div>
-  </footer>
 
 </div>
 
