@@ -47,8 +47,8 @@ function initCan(){
 
       setTimeout(function(){
 
-        can.gotoAndPlay(25);
-        $('.gps_ring.left').fadeIn();
+        can.gotoAndPlay(155);
+        $('.gps_ring.right').fadeIn();
 
       },1000);
 
