@@ -13,10 +13,10 @@
               <a class="btn btn-link btn-first hide" href="#home--can"><?php the_field('intro--headline'); ?></a>
               <a class="btn btn-link btn-first" href="#home--can">The Can</a>
               <a class="btn btn-link" href="#home--about">Mission</a>
-              <a class="btn btn-link" href="#home--gallery">Gallery</a>
-              <a class="btn btn-link" href="#home--story">The Story</a>
               <a class="btn btn-link" href="#home--videos">Videos</a>
+              <a class="btn btn-link" href="#home--story">The Story</a>
               <a class="btn btn-link" href="#home--social">#warriorscan</a>
+              <a class="btn btn-link" href="#home--gallery">Gallery</a>
               <div class="right">
                 <a class="btn btn-link ss-social-circle ss-facebook"  href="#"></a>
                 <a class="btn btn-link ss-social-circle ss-twitter"   href="#"></a>
@@ -61,25 +61,29 @@
     </div>
   </section>
 
-  <section id="home--gallery" class="static">
+  <?php
+
+    // Might be useful for videos
+    // http://sourcey.com/youtube-html5-embed-from-url-with-php/
+
+  ?>
+
+  <section id="home--videos">
     <div class="fs-row">
       <div class="fs-cell <?php echo $mainWidth; ?> fs-md-6 fs-sm-3 fs-centered">
         <div class="fs-row">
-          <div id="home--gallery_info"   class="fs-cell fs-lg-8 fs-md-6 fs-sm-3 fs-right">
-            <header id="home--gallery_title">
+          <div id="home--videos_info"   class="fs-cell fs-lg-8 fs-md-6 fs-sm-3 fs-right">
+            <header id="home--videos_title">
               <hr class="vertical-nav-line" />
-              <h5 class="section-title"><span>Gallery</span></h5>
-              <p><?php the_field('gallery_description'); ?></p>
+              <h5 class="section-title"><span>Videos</span></h5>
+              <?php the_field('videos_description'); ?>
             </header>
-          </div><!-- Home Can Info -->
+          </div><!-- Home Videos Info -->
+        </div>
+        <div id="home--video_content" class="fs-row">
+          <?php include locate_template('parts/home/videos.php'); ?>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section id="actual--gallery" class="fs-grid fs-grid-fluid">
-    <div class="fs-row nomargin">
-      <?php include locate_template('parts/home/gallery.php' ); ?>
     </div>
   </section>
 
@@ -119,32 +123,6 @@
     </div>
   </section>
 
-  <?php
-
-    // Might be useful for videos
-    // http://sourcey.com/youtube-html5-embed-from-url-with-php/
-
-  ?>
-
-  <section id="home--videos">
-    <div class="fs-row">
-      <div class="fs-cell <?php echo $mainWidth; ?> fs-md-6 fs-sm-3 fs-centered">
-        <div class="fs-row">
-          <div id="home--videos_info"   class="fs-cell fs-lg-8 fs-md-6 fs-sm-3 fs-right">
-            <header id="home--videos_title">
-              <hr class="vertical-nav-line" />
-              <h5 class="section-title"><span>Videos</span></h5>
-              <?php the_field('videos_description'); ?>
-            </header>
-          </div><!-- Home Videos Info -->
-        </div>
-        <div id="home--video_content" class="fs-row">
-          <?php include locate_template('parts/home/videos.php'); ?>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section id="home--social">
     <div class="fs-row">
       <div class="fs-cell <?php echo $mainWidth; ?> fs-md-6 fs-sm-3 fs-centered">
@@ -165,20 +143,48 @@
           <div id="home--social_content" class="fs-cell fs-lg-12 fs-md-6 fs-sm-3">
 
               <div id="tw-carousel-1" dir="rtl" class="fs-cell fs-lg-6 fs-md-6 fs-sm-3 fs-contained">
-                <?php //include locate_template('parts/home/social_tw-1.php' ); ?>
+                <?php include locate_template('parts/home/social_tw-1.php' ); ?>
               </div>
 
-              <?php // include locate_template('parts/home/social_ig-1.php' ); ?>
+              <div id="ig-carousel-1" dir="rtl" class="fs-cell fs-lg-6 fs-md-6 fs-sm-3 fs-contained">
+                <?php include locate_template('parts/home/social_ig-1.php' ); ?>
+              </div>
+
               <div class="clearfix"></div>
-              <?php // include locate_template('parts/home/social_ig-2.php' ); ?>
+
+              <div id="ig-carousel-2" dir="rtl" class="fs-cell fs-lg-6 fs-md-6 fs-sm-3 fs-contained">
+                <?php include locate_template('parts/home/social_ig-2.php' ); ?>
+              </div>
 
               <div id="tw-carousel-2" class="fs-cell fs-lg-6 fs-md-6 fs-sm-3 fs-contained">
-                <?php // include locate_template('parts/home/social_tw-2.php' ); ?>
+                <?php include locate_template('parts/home/social_tw-2.php' ); ?>
               </div>
 
-          </div>//
+          </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section id="home--gallery" class="static">
+    <div class="fs-row">
+      <div class="fs-cell <?php echo $mainWidth; ?> fs-md-6 fs-sm-3 fs-centered">
+        <div class="fs-row">
+          <div id="home--gallery_info"   class="fs-cell fs-lg-8 fs-md-6 fs-sm-3 fs-right">
+            <header id="home--gallery_title">
+              <hr class="vertical-nav-line" />
+              <h5 class="section-title"><span>Gallery</span></h5>
+              <p><?php the_field('gallery_description'); ?></p>
+            </header>
+          </div><!-- Home Can Info -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="actual--gallery" class="fs-grid fs-grid-fluid">
+    <div class="fs-row nomargin">
+      <?php include locate_template('parts/home/gallery.php' ); ?>
     </div>
   </section>
 
