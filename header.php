@@ -35,9 +35,9 @@
 
 <script type="text/javascript">
 window.rbwidgets = window.rbwidgets || {};
-window.rbwidgets.iframeURL ='http://www.redbull.com/en/RedBullCollection/1331580848687/GlobalNav?template=GlobalNavigation&todim=en_INT&logo=false';
+window.rbwidgets.iframeURL ='http://www.redbull.com/en/RedBullCollection/1331580848687/GlobalNav?template=GlobalNavigation&todim=en_NZ&logo=false';
 </script>
 <script type="text/javascript" src="http://www.redbull.com/cs/RedBull2Misc/global-nav/global-nav.js"></script>
 <noscript>
-<iframe src="http://www.redbull.com/en/RedBullCollection/1331580848687/GlobalNav?template=GlobalNavigation&todim=en_INT&logo=true" style="width:100%;height:37px;" frameborder="0" scrolling="no"></iframe>
+<iframe src="http://www.redbull.com/en/RedBullCollection/1331580848687/GlobalNav?template=GlobalNavigation&todim=en_NZ&logo=true" style="width:100%;height:37px;" frameborder="0" scrolling="no"></iframe>
 </noscript>
