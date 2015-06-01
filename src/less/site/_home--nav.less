@@ -13,17 +13,24 @@
     margin: 0 -2px;
     border-bottom: 1px solid transparent;
     border-radius: 0;
+    padding: 0;
+    margin-right: 8px;
+
+    &:visited {
+      color: @white;
+    }
 
     @media @tablet {
-      padding: 0 5px;
+      margin-right: 5px;
     }
 
     @media @desktop {
-      padding: 0 8px;
+      margin-right: 8px;
     }
 
     &:hover {
 
+      color: @white;
       border-bottom-color: @white50;
 
     }
@@ -100,7 +107,12 @@
     .btn {
 
       .font_size(18);
-      padding: 0 2px;
+      padding: 0;
+      margin-left: 0px;
+
+      &:hover {
+        border-bottom: 0;
+      }
 
       &:before {
         position: relative;

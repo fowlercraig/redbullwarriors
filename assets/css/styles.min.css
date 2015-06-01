@@ -5186,18 +5186,24 @@ section header {
   margin: 0 -2px;
   border-bottom: 1px solid transparent;
   border-radius: 0;
+  padding: 0;
+  margin-right: 8px;
+}
+.site-nav a:visited {
+  color: #ffffff;
 }
 @media screen and (min-width: 740px) {
   .site-nav a {
-    padding: 0 5px;
+    margin-right: 5px;
   }
 }
 @media screen and (min-width: 980px) {
   .site-nav a {
-    padding: 0 8px;
+    margin-right: 8px;
   }
 }
 .site-nav a:hover {
+  color: #ffffff;
   border-bottom-color: rgba(255, 255, 255, 0.5);
 }
 @media screen and (min-width: 740px) {
@@ -5253,7 +5259,11 @@ section header {
 .site-nav .right .btn {
   font-size: 18px;
   font-size: 1.125rem;
-  padding: 0 2px;
+  padding: 0;
+  margin-left: 0px;
+}
+.site-nav .right .btn:hover {
+  border-bottom: 0;
 }
 .site-nav .right .btn:before {
   position: relative;
