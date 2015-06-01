@@ -5168,7 +5168,7 @@ section header {
 #home--can_title h3 {
   color: #999999;
 }
-#home--can_nav {
+.site-nav {
   font-family: "futura-pt";
   font-size: 15px;
   font-size: 0.9375rem;
@@ -5177,10 +5177,10 @@ section header {
   font-weight: 500;
   margin-top: 75px;
 }
-#home--can_nav .hide {
+.site-nav .hide {
   display: none;
 }
-#home--can_nav a {
+.site-nav a {
   color: #ffffff;
   font-weight: normal;
   margin: 0 -2px;
@@ -5188,36 +5188,36 @@ section header {
   border-radius: 0;
 }
 @media screen and (min-width: 740px) {
-  #home--can_nav a {
+  .site-nav a {
     padding: 0 5px;
   }
 }
 @media screen and (min-width: 980px) {
-  #home--can_nav a {
+  .site-nav a {
     padding: 0 8px;
   }
 }
-#home--can_nav a:hover {
+.site-nav a:hover {
   border-bottom-color: rgba(255, 255, 255, 0.5);
 }
 @media screen and (min-width: 740px) {
-  #home--can_nav {
+  .site-nav {
     margin-bottom: 100px;
   }
 }
 @media screen and (min-width: 980px) {
-  #home--can_nav {
+  .site-nav {
     margin-top: 25px;
     margin-bottom: 25px;
   }
 }
 @media screen and (min-width: 1220px) {
-  #home--can_nav {
+  .site-nav {
     margin-top: 50px;
     margin-bottom: 125px;
   }
 }
-#home--can_nav.banner--clone {
+.site-nav.banner--clone {
   position: fixed;
   top: 0;
   left: 0;
@@ -5232,32 +5232,52 @@ section header {
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
-#home--can_nav.banner--clone a:hover {
+.site-nav.banner--clone a:hover {
   border-bottom-color: transparent;
 }
-#home--can_nav.banner--clone .hide {
+.site-nav.banner--clone .hide {
   display: inline-block;
   margin-right: 8px;
 }
-#home--can_nav.banner--clone .hide br {
+.site-nav.banner--clone .hide br {
   display: none;
 }
-#home--can_nav.banner--clone .hide span {
+.site-nav.banner--clone .hide span {
   color: #cc1c4a;
 }
-#home--can_nav.banner--stick {
+.site-nav.banner--stick {
   -webkit-transform: translateY(0%);
   -ms-transform: translateY(0%);
   transform: translateY(0%);
 }
-#home--can_nav .right .btn {
+.site-nav .right .btn {
   font-size: 18px;
   font-size: 1.125rem;
   padding: 0 2px;
 }
-#home--can_nav .right .btn:before {
+.site-nav .right .btn:before {
   position: relative;
   top: .135em;
+}
+.site-nav#footer--can_nav {
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  padding-top: 8.33333333px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.site-nav#footer--can_nav a {
+  font-size: 12px;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.75);
+  padding: 0;
+  margin-right: 8px;
+}
+.site-nav#footer--can_nav a:hover {
+  color: #ffffff;
+}
+.site-nav#footer--can_nav a .logo {
+  font-weight: 600;
+  color: #ffffff;
 }
 #home--about_wrapper {
   position: relative;
