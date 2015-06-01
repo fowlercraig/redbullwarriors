@@ -38,7 +38,7 @@ function initCan(){
       navigation:         false,
       responsive:         true,
       autoplayDirection:  -1,
-      onReady:            function(){ initspin(), loadedCan() },
+      onReady:            function(){ loadedCan() },
     });
 
  //   function moveCan(){
@@ -94,7 +94,9 @@ function initCan(){
 
     $(".gps_ring").hide();
 
-    $(".can").hover(function(){
+
+
+    $("#spinner--container").hover(function(){
 
       var currentframe = can.getNormalizedCurrentFrame();
       console.log(currentframe);
@@ -105,8 +107,7 @@ function initCan(){
         if ( currentframe < 25) {
           can.gotoAndPlay(0);
           can.stop();
-          $(".gps_ring.middle").fadeIn();
-          console.log('1');
+          $('.gps_ring.middle').fadeIn();
         }
       }
 
@@ -117,6 +118,7 @@ function initCan(){
           can.gotoAndPlay(25);
           can.stop();
           console.log('Left Side');
+          $('.gps_ring.left').fadeIn();
         }
       }
 
@@ -127,6 +129,7 @@ function initCan(){
           can.gotoAndPlay(25);
           can.stop();
           console.log('Left Side');
+          $('.gps_ring.left').fadeIn();
         }
       }
 
@@ -137,6 +140,7 @@ function initCan(){
           can.gotoAndPlay(155);
           can.stop();
           console.log('3');
+          $('.gps_ring.right').fadeIn();
         }
       }
 
@@ -147,12 +151,18 @@ function initCan(){
           can.gotoAndPlay(155);
           can.stop();
           console.log('Left Side');
+          $('.gps_ring.right').fadeIn();
         }
       }
 
     }, function(){
 
-      can.play();
+      if ($('#spinner--overlay').hasClass('active')){
+        can.stop();
+      } else {
+        can.play();
+        $(".gps_ring").hide();
+      }
 
     });
 
@@ -163,7 +173,7 @@ function initCan(){
       $(".gps_ring").fadeOut();
     });
 
-    // hoverCan();
+    hoverCan();
 
     function advanceCan(){
 
