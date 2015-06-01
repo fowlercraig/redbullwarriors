@@ -168,6 +168,24 @@ function initCan(){
 
     }
 
+    function move() {
+
+      can.$el.bind('mousedown touchstart touchmove touchend mousemove click', function (event) {
+
+        event.preventDefault();
+
+        if ((event.type === 'mousedown' && event.which === 1) || event.type === 'touchstart') {
+          $(".gps_ring").hide();
+        }
+
+      });
+
+    }
+
+    move();
+
+    //console.log(touchevent);
+
     $('#spinner--overlay_close').on('click', function(){
       can.play();
       $(".gps_ring").fadeOut();
