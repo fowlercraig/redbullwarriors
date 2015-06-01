@@ -5682,46 +5682,13 @@ section header {
   -webkit-animation: pulsate 1s ease-out;
   -webkit-animation-iteration-count: infinite;
   opacity: 1;
-  background: #ffffff;
   border: 5px solid;
+  margin: 0;
 }
 .hotspot-frame .gps_ring.fs-tabs-active.active,
 .hotspot-frame .gps_ring.fs-tabs-tab.fs-tabs-enabled.fs-tabs-active.active {
   border-color: #cc1c4a !important;
   background: #cc1c4a;
-}
-.hotspot-frame .gps_ring:nth-child(1),
-.hotspot-frame .gps_ring.fs-tabs-tab.fs-tabs-enabled:nth-child(1) {
-  left: 50px;
-  top: 30px;
-}
-.hotspot-frame .gps_ring:nth-child(2),
-.hotspot-frame .gps_ring.fs-tabs-tab.fs-tabs-enabled:nth-child(2) {
-  left: 20px;
-  top: 40px;
-}
-.hotspot-frame .gps_ring:nth-child(3),
-.hotspot-frame .gps_ring.fs-tabs-tab.fs-tabs-enabled:nth-child(3) {
-  left: 120px;
-  top: 90px;
-}
-.hotspot-frame .gps_ring:nth-child(4),
-.hotspot-frame .gps_ring.fs-tabs-tab.fs-tabs-enabled:nth-child(4) {
-  left: 20px;
-  top: 60px;
-  display: none;
-}
-.hotspot-frame .gps_ring:nth-child(5),
-.hotspot-frame .gps_ring.fs-tabs-tab.fs-tabs-enabled:nth-child(5) {
-  left: 70px;
-  top: 50px;
-  display: none;
-}
-.hotspot-frame .gps_ring:nth-child(6),
-.hotspot-frame .gps_ring.fs-tabs-tab.fs-tabs-enabled:nth-child(6) {
-  left: 40px;
-  top: 70px;
-  display: none;
 }
 .hotspot-frame .gps_ring:active,
 .hotspot-frame .gps_ring.fs-tabs-tab.fs-tabs-enabled:active {
