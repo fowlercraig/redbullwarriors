@@ -20,10 +20,13 @@
     <div class="threesixty can">
       <div class="spinner"><span>0%</span></div>
       <ol class="threesixty_images"></ol>
-      <div class="loader-img">
-        <div class="spinner-thing"></div>
-        <img src="/assets/img/Warriors_v02.1.png" class="img-responsive" />
-      </div>
+
+      <?php
+     //<div class="loader-img">
+     //  <div class="spinner-thing"></div>
+     //  <img src="/assets/img/Warriors_v02.1.png" class="img-responsive" />
+     //</div>
+      ?>
     </div>
   </div>
 </div>

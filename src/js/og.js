@@ -22,21 +22,22 @@ function initCan(){
     });
 
     can = $('.can').ThreeSixty({
-      totalFrames:      180,
-      endFrame:         180,
-      currentFrame:     1,
-      framerate:        60,
+      totalFrames:        180,
+      endFrame:           180,
+      currentFrame:       1,
+      framerate:          15,
 
-      progress:         '.spinner',
-      imagePath:        '/assets/img/png-8/',
-      filePrefix:       'warriors-',
-      ext:              '.png',
+      progress:           '.spinner',
+      imagePath:          '/assets/img/png-8/',
+      filePrefix:         'warriors-',
+      ext:                '.png',
 
-      height:           realHeight,
-      width:            divWidth,
-      navigation:       false,
-      responsive:       true,
-      onReady:          function(){ loadedCan() },
+      height:             realHeight,
+      width:              divWidth,
+      navigation:         false,
+      responsive:         true,
+      autoplayDirection:  -1,
+      onReady:            function(){ can.play(),loadedCan() },
     });
 
   }
