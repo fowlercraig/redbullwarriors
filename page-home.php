@@ -81,7 +81,11 @@
           </div><!-- Home Videos Info -->
         </div>
         <div id="home--video_content" class="fs-row">
+          <?php if ( !get_field('coming_soon')): ?>
           <?php include locate_template('parts/home/videos.php'); ?>
+          <?php else: ?>
+          <?php include locate_template('parts/home/videos-comingsoon.php'); ?>
+          <?php endif; ?>
         </div>
       </div>
     </div>
