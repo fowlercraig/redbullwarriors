@@ -5357,6 +5357,9 @@ section header {
   margin-bottom: 0;
   margin-top: 0;
 }
+.site-nav#footer--can_nav.noborder {
+  border-top: none;
+}
 .site-nav#footer--can_nav a {
   font-size: 12px;
   font-size: 0.75rem;

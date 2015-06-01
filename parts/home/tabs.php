@@ -1,5 +1,3 @@
-
-
 <div id="spinner--tabs-content">
 
   <?php if( have_rows('hotspots_section-1') ): $counter = 1; while ( have_rows('hotspots_section-1') ) : the_row(); ?>

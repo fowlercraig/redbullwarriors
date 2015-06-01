@@ -170,6 +170,10 @@
     </div>
   </section>
 
+  <?php // not sure why i need this ?>
+
+  <?php wp_reset_query(); ?>
+
   <section id="home--gallery" class="static">
     <div class="fs-row">
       <div class="fs-cell <?php echo $mainWidth; ?> fs-md-6 fs-sm-3 fs-centered">
@@ -197,7 +201,7 @@
       <div class="fs-cell <?php echo $mainWidth; ?> fs-md-6 fs-sm-3 fs-centered">
         <div class="fs-row">
           <div id="footer--can_info"   class="fs-cell fs-lg-12 fs-md-6 fs-sm-3">
-            <nav id="footer--can_nav"  class="site-nav">
+            <nav id="footer--can_nav"  class="site-nav noborder">
               <a href='http://redbull.com/nz/en'><span class="logo">RedBull.com</span></a>
               <a href='http://redbull.com/nz/en/data-privacy-policy' title='Privacy Policy' target='_blank'><span>Privacy Policy</span></a>
               <a href='http://redbull.com/nz/en/terms-and-conditions' title='Terms & Conditions' target='_blank'><span>Terms & Conditions</span></a>
