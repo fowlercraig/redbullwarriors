@@ -38,7 +38,7 @@ function initCan(){
       navigation:         false,
       responsive:         true,
       autoplayDirection:  -1,
-      onReady:            function(){ loadedCan() },
+      onReady:            function(){ initspin(), loadedCan() },
     });
 
  //   function moveCan(){
@@ -75,17 +75,9 @@ function initCan(){
     $(".gps_ring").hide();
 
     function initspin(){
-      // can.play();
-      can.gotoAndPlay(0);
 
       setTimeout(function(){
-
-        var d= 0;
-          $('.gps_ring.middle').each(function() {
-          $(this).delay(d).fadeIn(500);
-          d += 300;
-        });
-
+        $('.gps_ring.middle').fadeIn();
       },1000);
 
     }
