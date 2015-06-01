@@ -19,5 +19,4 @@
 // @codekit-prepend "../bower_components/threesixty-slider/dist/threesixty.min.js"
 // @codekit-prepend "../bower_components/headhesive.js/dist/headhesive.js"
 // @codekit-prepend "../bower_components/FitVids/jquery.fitvids.js"
-// @codekit-prepend "../bower_components/magnific-popup/jquery.magnific-popup.js"
 // @codekit-prepend "../bower_components/slick-carousel/slick/slick.min.js"

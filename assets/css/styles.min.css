@@ -5597,6 +5597,7 @@ section header {
   -webkit-animation: pulsate 1s ease-out;
   -webkit-animation-iteration-count: infinite;
   opacity: 1;
+  background: #ffffff;
   border: 5px solid;
 }
 .hotspot-frame .gps_ring.fs-tabs-active.active,

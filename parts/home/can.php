@@ -1,19 +1,15 @@
 <div id="spinner--container">
   <nav id="spinner-tabs" class="tabs">
     <div class="hotspot-frame" id="info--group_1">
-      <a href="#tab-1" class="tab gps_ring" data-tabs-group="tab-group"></a>
-      <a href="#tab-2" class="tab gps_ring" data-tabs-group="tab-group"></a>
-      <a href="#tab-3" class="tab gps_ring" data-tabs-group="tab-group"></a>
-    </div>
-    <div class="hotspot-frame" id="info--group_2">
-      <a href="#tab-4" class="tab gps_ring" data-tabs-group="tab-group"></a>
-      <a href="#tab-5" class="tab gps_ring" data-tabs-group="tab-group"></a>
-      <a href="#tab-6" class="tab gps_ring" data-tabs-group="tab-group"></a>
-    </div>
-    <div class="hotspot-frame" id="info--group_2">
-      <a href="#tab-7" class="tab gps_ring" data-tabs-group="tab-group"></a>
-      <a href="#tab-8" class="tab gps_ring" data-tabs-group="tab-group"></a>
-      <a href="#tab-9" class="tab gps_ring" data-tabs-group="tab-group"></a>
+
+      <?php if( have_rows('hotspots_section-1') ): $i = 1; while ( have_rows('hotspots_section-1') ) : the_row(); ?>
+      <?php if ( !get_sub_field('enable_hotspot')): ?>
+
+      <a href="#tab-<?php echo $i; ?>" style="left: <?php the_sub_field('x_coordinate'); ?>px; top: <?php the_sub_field('y_coordinate'); ?>px" class="tab gps_ring <?php the_sub_field('quadrant'); ?>" data-tabs-group="tab-group"></a>
+
+      <?php endif; ?>
+      <?php $i++; endwhile; endif; ?>
+
     </div>
   </nav>
   <div id="spinner--wrapper">

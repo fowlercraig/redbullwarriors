@@ -38,7 +38,7 @@ function initCan(){
       navigation:         false,
       responsive:         true,
       autoplayDirection:  -1,
-      onReady:            function(){ can.play(), loadedCan() },
+      onReady:            function(){ initspin(), loadedCan() },
     });
 
  //   function moveCan(){
@@ -72,8 +72,27 @@ function initCan(){
 //     },20000);
 
 //   }
+    $(".gps_ring").hide();
+
+    function initspin(){
+      // can.play();
+      can.gotoAndPlay(0);
+
+      setTimeout(function(){
+
+        var d= 0;
+          $('.gps_ring.middle').each(function() {
+          $(this).delay(d).fadeIn(500);
+          d += 300;
+        });
+
+      },1000);
+
+    }
 
     function hoverCan(){
+
+    $(".gps_ring").hide();
 
     $(".can").hover(function(){
 
@@ -86,6 +105,7 @@ function initCan(){
         if ( currentframe < 25) {
           can.gotoAndPlay(0);
           can.stop();
+          $(".gps_ring.middle").fadeIn();
           console.log('1');
         }
       }
@@ -138,7 +158,12 @@ function initCan(){
 
     }
 
-    hoverCan();
+    $('#spinner--overlay_close').on('click', function(){
+      can.play();
+      $(".gps_ring").fadeOut();
+    });
+
+    // hoverCan();
 
     function advanceCan(){
 
