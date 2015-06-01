@@ -18,9 +18,9 @@
               <a class="btn btn-link" href="#home--social">#warriorscan</a>
               <a class="btn btn-link" href="#home--gallery">Gallery</a>
               <div class="right">
-                <a class="btn btn-link ss-social-circle ss-facebook"  href="#"></a>
-                <a class="btn btn-link ss-social-circle ss-twitter"   href="#"></a>
-                <a class="btn btn-link ss-social-circle ss-instagram" href="#"></a>
+                <a class="btn btn-link ss-social-circle ss-facebook"  target="blank" href="https://www.facebook.com/redbull?_rdr"></a>
+                <a class="btn btn-link ss-social-circle ss-twitter"   target="blank" href="https://twitter.com/redbullnz"></a>
+                <a class="btn btn-link ss-social-circle ss-instagram" target="blank" href="https://instagram.com/redbullnz/"></a>
               </div>
             </nav>
             <header id="home--can_title">
