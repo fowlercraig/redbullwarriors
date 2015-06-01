@@ -17,7 +17,7 @@
               <a class="btn btn-link" href="#home--story">The Story</a>
               <a class="btn btn-link" href="#home--social">#warriorscan</a>
               <a class="btn btn-link" href="#home--gallery">Gallery</a>
-              <div class="right">
+              <div class="social-nav right">
                 <a class="btn btn-link ss-social-circle ss-facebook"  target="blank" href="https://www.facebook.com/redbull?_rdr"></a>
                 <a class="btn btn-link ss-social-circle ss-twitter"   target="blank" href="https://twitter.com/redbullnz"></a>
                 <a class="btn btn-link ss-social-circle ss-instagram" target="blank" href="https://instagram.com/redbullnz/"></a>
@@ -43,7 +43,7 @@
     <div class="fs-row">
       <div class="fs-cell <?php echo $mainWidth; ?> fs-md-6 fs-sm-3 fs-centered">
         <div id="home--about_wrapper" class="fs-row">
-          <div id="home--about_info"   class="fs-cell fs-lg-8 fs-md-6 fs-sm-3 fs-right sized">
+          <div id="home--about_info"   class="fs-cell fs-lg-8 fs-md-4 fs-sm-3 fs-right sized">
             <header id="home--about_title">
               <hr class="vertical-nav-line" />
               <h5 class="section-title"><span>Mission</span></h5>
@@ -52,7 +52,7 @@
               <?php the_field('mission'); ?>
             </div>
           </div><!-- Home Can Info -->
-          <div id="home--view-gallery" class="fs-cell fs-lg-4 fs-md-6 fs-sm-3s sized">
+          <div id="home--view-gallery" class="fs-cell fs-lg-4 fs-md-2 fs-sm-3s sized">
             <a href="#home--gallery" class="ss-glyphish ss-plus">View the Gallery</a>
           </div>
           <div id="home--about_bg"></div>
@@ -72,7 +72,7 @@
     <div class="fs-row">
       <div class="fs-cell <?php echo $mainWidth; ?> fs-md-6 fs-sm-3 fs-centered">
         <div class="fs-row">
-          <div id="home--videos_info"   class="fs-cell fs-lg-8 fs-md-6 fs-sm-3 fs-right">
+          <div id="home--videos_info"   class="fs-cell fs-lg-8 fs-md-4 fs-sm-3 fs-right">
             <header id="home--videos_title">
               <hr class="vertical-nav-line" />
               <h5 class="section-title"><span>Videos</span></h5>
@@ -95,23 +95,23 @@
     <div class="fs-row">
       <div class="fs-cell <?php echo $mainWidth; ?> fs-md-6 fs-sm-3 fs-centered">
         <div class="fs-row">
-          <div id="home--story_info"   class="fs-cell fs-lg-8 fs-md-6 fs-sm-3 fs-right">
+          <div id="home--story_info"   class="fs-cell fs-lg-8 fs-md-4 fs-sm-3 fs-right">
             <header id="home--story_title">
               <hr class="vertical-nav-line" />
               <h5 class="section-title"><span>Story</span></h5>
             </header>
           </div><!-- Home Story Info -->
           <hr class="invisible">
-          <div id="home--story_content" class="fs-cell section-content fs-lg-8 fs-md-6 fs-sm-3 fs-right">
+          <div id="home--story_content" class="fs-cell section-content fs-lg-8 fs-md-4 fs-sm-3 fs-right">
             <?php the_field('projectstory'); ?>
           </div>
-          <aside class="fs-cell fs-lg-3 fs-md-hide fs-sm-3">
-            <hr class="invisible">
-            <hr class="invisible">
-            <hr class="invisible">
-            <hr class="invisible">
-            <hr class="invisible">
-            <hr class="invisible">
+          <aside class="fs-cell fs-lg-3 fs-md-2 fs-sm-2">
+            <hr class="spacer invisible">
+            <hr class="spacer invisible">
+            <hr class="spacer invisible">
+            <hr class="spacer invisible">
+            <hr class="spacer invisible">
+            <hr class="spacer invisible">
             <figure>
               <img src="/assets/img/warriorsbg.jpg" class="img-responsive" />
               <figcaption>
@@ -131,7 +131,7 @@
     <div class="fs-row">
       <div class="fs-cell <?php echo $mainWidth; ?> fs-md-6 fs-sm-3 fs-centered">
         <div class="fs-row">
-          <div id="home--social_info"   class="fs-cell fs-lg-8 fs-md-6 fs-sm-3 fs-right">
+          <div id="home--social_info"   class="fs-cell fs-lg-8 fs-md-4 fs-sm-3 fs-right">
             <header id="home--social_title">
               <hr class="vertical-nav-line" />
               <h5 class="section-title">
@@ -146,21 +146,21 @@
           </div><!-- Home Can Info -->
           <div id="home--social_content" class="fs-cell fs-lg-12 fs-md-6 fs-sm-3">
 
-              <div id="tw-carousel-1" dir="rtl" class="fs-cell fs-lg-6 fs-md-6 fs-sm-3 fs-contained">
+              <div id="tw-carousel-1" dir="rtl" class="fs-cell fs-lg-6 fs-md-3 fs-sm-3 fs-contained">
                 <?php include locate_template('parts/home/social_tw-1.php' ); ?>
               </div>
 
-              <div id="ig-carousel-1" dir="rtl" class="fs-cell fs-lg-6 fs-md-6 fs-sm-3 fs-contained">
+              <div id="ig-carousel-1" dir="rtl" class="fs-cell fs-lg-6 fs-md-3 fs-sm-3 fs-contained">
                 <?php include locate_template('parts/home/social_ig-1.php' ); ?>
               </div>
 
               <div class="clearfix"></div>
 
-              <div id="ig-carousel-2" dir="rtl" class="fs-cell fs-lg-6 fs-md-6 fs-sm-3 fs-contained">
+              <div id="ig-carousel-2" dir="rtl" class="fs-cell fs-lg-6 fs-md-3 fs-sm-3 fs-contained">
                 <?php include locate_template('parts/home/social_ig-2.php' ); ?>
               </div>
 
-              <div id="tw-carousel-2" class="fs-cell fs-lg-6 fs-md-6 fs-sm-3 fs-contained">
+              <div id="tw-carousel-2" class="fs-cell fs-lg-6 fs-md-3 fs-sm-3 fs-contained">
                 <?php include locate_template('parts/home/social_tw-2.php' ); ?>
               </div>
 
@@ -178,7 +178,7 @@
     <div class="fs-row">
       <div class="fs-cell <?php echo $mainWidth; ?> fs-md-6 fs-sm-3 fs-centered">
         <div class="fs-row">
-          <div id="home--gallery_info"   class="fs-cell fs-lg-8 fs-md-6 fs-sm-3 fs-right">
+          <div id="home--gallery_info"   class="fs-cell fs-lg-8 fs-md-4 fs-sm-3 fs-right">
             <header id="home--gallery_title">
               <hr class="vertical-nav-line" />
               <h5 class="section-title"><span>Gallery</span></h5>

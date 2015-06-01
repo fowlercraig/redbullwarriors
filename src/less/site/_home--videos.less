@@ -2,6 +2,10 @@
 
   .video-wrapper {
 
+    @media @min {
+      margin-bottom: @spaced*1;
+    }
+
     @media @desktop {
       margin-bottom: @spaced*2;
     }
@@ -12,7 +16,19 @@
 
     h3 {
       color: @rb-red;
-      .font_size(32);
+
+      @media @min {
+        .font_size(32);
+      }
+
+      @media @desktop {
+        .font_size(28);
+      }
+
+      @media @max {
+        .font_size(32);
+      }
+
     }
 
     &:hover {
@@ -30,6 +46,10 @@
 
     a {
       .font_size(15);
+      color: @white;
+      &:visited {
+        color: inherit;
+      }
     }
 
     .table {

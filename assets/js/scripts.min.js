@@ -82,6 +82,14 @@ function initCan(){
 
     }
 
+    setInterval(function(){
+
+      can.stop();
+      can.gotoAndPlay(180);
+      $('.gps_ring.middle').fadeIn();
+
+    },30000);
+
     function hoverCan(){
 
     $(".gps_ring").hide();

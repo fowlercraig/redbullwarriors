@@ -2119,6 +2119,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/assets\/js\/scripts.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/scripts.min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/min\/scripts.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/attachment.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -10485,6 +10496,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/src\/js\/min\/og-min.js",
 		"outputAbbreviatedPath": "\/src\/js\/min\/min\/og-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/src\/js\/og.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/js\/og.js",
+		"outputAbbreviatedPath": "\/src\/js\/min\/og-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,

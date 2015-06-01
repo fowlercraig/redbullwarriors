@@ -22,6 +22,7 @@
 
     @media @tablet {
       margin-right: 5px;
+      .font_size(14);
     }
 
     @media @desktop {
@@ -40,7 +41,7 @@
   margin-top: @spaced*3;
 
   @media @tablet {
-    margin-bottom: @spaced*4;
+    margin-bottom: @spaced*2;
   }
 
   @media @desktop {
@@ -51,6 +52,36 @@
   @media @max {
     margin-top: @spaced*2;
     margin-bottom: @spaced*5;
+  }
+
+  .right {
+
+    .btn {
+
+      .font_size(18);
+      padding: 0;
+      margin-left: 0px;
+
+      &:hover {
+        border-bottom: 0;
+      }
+
+      &:before {
+        position: relative;
+        top: .135em;
+      }
+
+    }
+
+    @media @tablet {
+      float: none;
+      margin-left: 0;
+    }
+
+    @media @max {
+      float: right;
+    }
+
   }
 
   &.banner--clone {
@@ -73,6 +104,19 @@
 
       &:hover {
         border-bottom-color: transparent;
+      }
+
+    }
+
+    .right {
+
+      @media @tablet {
+        float: right;
+        margin-left: 0;
+      }
+
+      @media @max {
+        float: right;
       }
 
     }
@@ -102,26 +146,6 @@
     transform:translateY(0%)
   }
 
-  .right {
-
-    .btn {
-
-      .font_size(18);
-      padding: 0;
-      margin-left: 0px;
-
-      &:hover {
-        border-bottom: 0;
-      }
-
-      &:before {
-        position: relative;
-        top: .135em;
-      }
-
-    }
-
-  }
 
   &#footer--can_nav {
 
