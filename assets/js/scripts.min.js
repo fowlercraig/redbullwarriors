@@ -41,43 +41,15 @@ function initCan(){
       onReady:            function(){ initspin(), loadedCan() },
     });
 
- //   function moveCan(){
-
-//     var timeFrame = 150000;
-
-//     function initialTour(){
-
-//       var timeFrame = 150000;
-
-//       setTimeout(function(){
-//         can.gotoAndPlay(160);
-//       },5000);
-
-//       setTimeout(function(){
-//         can.gotoAndPlay(15);
-//       },10000);
-
-//       setTimeout(function(){
-//         can.gotoAndPlay(180);
-//       },150000);
-
-//     }
-
-//     initialTour();
-
-//     setTimeout(function(){
-
-//       can.play();
-
-//     },20000);
-
-//   }
     $(".gps_ring").hide();
 
     function initspin(){
 
       setTimeout(function(){
+
+        can.gotoAndPlay(0);
         $('.gps_ring.middle').fadeIn();
+
       },1000);
 
     }
@@ -187,7 +159,7 @@ function initCan(){
       $(".gps_ring").fadeOut();
     });
 
-    hoverCan();
+    // hoverCan();
 
     function advanceCan(){
 
