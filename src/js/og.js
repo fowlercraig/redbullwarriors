@@ -176,6 +176,10 @@ function initCan(){
 
         if ((event.type === 'mousedown' && event.which === 1) || event.type === 'touchstart') {
           $(".gps_ring").hide();
+          $('body').css('overflow', 'visible');
+          $("#spinner--overlay").transition({opacity:0}).removeClass('active');
+          $("#spinner--wrapper").css({zIndex:100,position:'relative'}).addClass('active');
+          $("#spinner--container .tab").removeClass('fs-tabs-active');
         }
 
       });
