@@ -27,21 +27,6 @@ function initCan(){
       currentFrame:     1,
       framerate:        60,
 
-      // progress:         '.spinner',
-      // imagePath:        '/assets/img/png/',
-      // filePrefix:       'Warriors_v02.',
-      // ext:              '.png',
-
-      // progress:         '.spinner',
-      // imagePath:        '/assets/img/jpg-black/',
-      // filePrefix:       'rb_can-',
-      // ext:              '.jpg',
-
-      // progress:         '.spinner',
-      // imagePath:        '/assets/img/can/',
-      // filePrefix:       'rb-warriors-',
-      // ext:              '.gif',
-
       progress:         '.spinner',
       imagePath:        '/assets/img/png-8/',
       filePrefix:       'warriors-',
