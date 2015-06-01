@@ -2042,13 +2042,24 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/site--bg.png": {
+	"\/assets\/img\/site--bg.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 180167,
+		"inputAbbreviatedPath": "\/assets\/img\/site--bg.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/site--bg.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/site--bg.old.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 248702,
-		"inputAbbreviatedPath": "\/assets\/img\/site--bg.png",
-		"outputAbbreviatedPath": "\/assets\/img\/site--bg.png",
+		"inputAbbreviatedPath": "\/assets\/img\/site--bg.old.png",
+		"outputAbbreviatedPath": "\/assets\/img\/site--bg.old.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -4435,6 +4446,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/parts\/home\/videos.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/parts\/rb-footer.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/parts\/rb-footer.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
