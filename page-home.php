@@ -174,7 +174,7 @@
 
   <?php wp_reset_query(); ?>
 
-  <section id="home--gallery" class="static">
+  <section id="home--gallery">
     <div class="fs-row">
       <div class="fs-cell <?php echo $mainWidth; ?> fs-md-6 fs-sm-3 fs-centered">
         <div class="fs-row">

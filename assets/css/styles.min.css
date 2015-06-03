@@ -4973,7 +4973,7 @@ html {
   #home--story,
   #home--videos,
   #home--social {
-    background: url('/assets/img/bg-background.png') top center no-repeat;
+    background: url('/assets/img/bg-background.jpg') top center no-repeat;
     background-size: cover;
     background-attachment: fixed;
   }
