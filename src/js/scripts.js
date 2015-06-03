@@ -4,6 +4,7 @@
 // @codekit-prepend "_smoothscroll.js"
 // @codekit-prepend "_socialcarousel.js"
 // @codekit-prepend "_popupgallery.js"
+// @codekit-prepend "_caneries.js"
 
 function randomInit(){
 

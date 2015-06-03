@@ -6,7 +6,7 @@
  */
 .fs_grid_row,
 .fs-grid .fs-row {
-  width: 953;
+  width: 98%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -5252,29 +5252,29 @@ section header {
 }
 @media screen and (min-width: 300px) {
   #home--can_title h1 {
-    font-size: 40px;
-    font-size: 2.5rem;
+    font-size: 36px;
+    font-size: 2.25rem;
     letter-spacing: -2px;
   }
 }
 @media screen and (min-width: 500px) {
   #home--can_title h1 {
-    font-size: 50px;
-    font-size: 3.125rem;
+    font-size: 45px;
+    font-size: 2.8125rem;
     letter-spacing: -2px;
   }
 }
 @media screen and (min-width: 740px) {
   #home--can_title h1 {
-    font-size: 79px;
-    font-size: 4.9375rem;
+    font-size: 67px;
+    font-size: 4.1875rem;
     letter-spacing: -2px;
   }
 }
 @media screen and (min-width: 980px) {
   #home--can_title h1 {
-    font-size: 80px;
-    font-size: 5rem;
+    font-size: 70px;
+    font-size: 4.375rem;
     letter-spacing: 0;
   }
 }
@@ -5350,7 +5350,7 @@ section header {
 @media screen and (min-width: 1220px) {
   .site-nav {
     margin-top: 50px;
-    margin-bottom: 125px;
+    margin-bottom: 75px;
   }
 }
 .site-nav .right .btn {
