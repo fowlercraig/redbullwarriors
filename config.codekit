@@ -55,7 +55,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 132298,
+		"initialSize": 104640,
 		"inputAbbreviatedPath": "\/assets\/img\/bg-background.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/bg-background.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -2123,7 +2123,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 397114,
+		"initialSize": 106180,
 		"inputAbbreviatedPath": "\/assets\/img\/warriorsbg.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/warriorsbg.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -2143,7 +2143,7 @@
 		},
 	"\/assets\/js\/scripts.min.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/js\/scripts.min.js",
 		"outputAbbreviatedPath": "\/assets\/js\/min\/scripts.min-min.js",
@@ -10552,6 +10552,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/src\/js\/min\/scripts-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/js\/min\/scripts-min.js",
+		"outputAbbreviatedPath": "\/src\/js\/min\/min\/scripts-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/src\/js\/og.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -10568,10 +10579,10 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/src\/js\/scripts.js",
-		"outputAbbreviatedPath": "\/assets\/js\/scripts.min.js",
+		"outputAbbreviatedPath": "\/src\/js\/min\/scripts-min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1,
-		"outputStyle": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
 	"\/src\/less\/_base.less": {

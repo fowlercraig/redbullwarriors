@@ -5773,9 +5773,13 @@ section header {
   opacity: 0;
   overflow: hidden;
   pointer-events: none;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
 }
 #spinner--overlay.active {
   pointer-events: auto;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+  filter: alpha(opacity=1);
 }
 #spinner--overlay #spinner--overlay_close {
   cursor: pointer;
