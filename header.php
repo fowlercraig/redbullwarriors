@@ -20,6 +20,7 @@
 
 <!--[if lt IE 9]>
 <script src="/assets/js/respond.min.js"></script>
+<script src="/assets/js/pie.js"></script>
 <![endif]-->
 
 </head>
