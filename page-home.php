@@ -30,7 +30,7 @@
               <h1><?php the_field('intro--headline'); ?></h1>
               <h3><?php the_field('intro--sub-headline'); ?></h3>
               <?php the_field('intro--teaser'); ?>
-              <a class="navigate-icon" href="#home--about"><i class="ss-gizmo ss-icon">navigatedown</i></a>
+              <a class="navigate-icon ss-gizmo ss-navigatedown" href="#home--about"></a>
               <hr class="vertical-nav-line" />
             </header>
           </div><!-- Home Can Info -->
