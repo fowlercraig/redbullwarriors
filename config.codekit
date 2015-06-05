@@ -2130,12 +2130,12 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/js\/PIE.js": {
+	"\/assets\/js\/pie.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/js\/PIE.js",
-		"outputAbbreviatedPath": "\/assets\/js\/min\/PIE-min.js",
+		"inputAbbreviatedPath": "\/assets\/js\/pie.js",
+		"outputAbbreviatedPath": "\/assets\/js\/min\/pie-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
