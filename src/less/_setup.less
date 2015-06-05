@@ -65,6 +65,13 @@
   font-size: ~"@{rem}rem";
 }
 
+.border_radius(@radius_size) {
+  -webkit-border-radius : @radius_size;
+     -moz-border-radius : @radius_size;
+      -ms-border-radius : @radius_size;
+          border-radius : @radius_size;
+}
+
 .rgba_background(@base, @alpha) {
   background-color: rgba(red(@base), green(@base), blue(@base), @alpha);
 }

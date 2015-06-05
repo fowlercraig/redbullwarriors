@@ -5865,7 +5865,7 @@ section header {
 }
 .hotspot-frame .gps_ring,
 .hotspot-frame .gps_ring.fs-tabs-tab.fs-tabs-enabled {
-  -webkit-border-radius: 30px;
+  border-radius: 30px;
   height: 35px;
   width: 35px;
   position: absolute;
