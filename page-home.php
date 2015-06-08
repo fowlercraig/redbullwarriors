@@ -113,12 +113,7 @@
             <hr class="spacer invisible">
             <hr class="spacer invisible">
             <figure>
-              <img src="/assets/img/warriorsbg.jpg" class="img-responsive" />
-              <figcaption>
-                Sed ac libero tincidunt, dapibus sem ut, volutpat sapien. Quisque at
-                varius ipsum. Aenean vitae massa id dolor ullamcorper viverra eu ac
-                libero. Sed malesuada mollis semper.
-              </figcaption>
+              <?php the_field('fig-description'); ?>
             </figure>
           </aside>
 
