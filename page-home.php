@@ -206,9 +206,9 @@
               <a href='http://energydrink-nz.redbull.com/contact' title='Contact Us' target='_blank'><span>Contact Us</span></a>
               <a href='http://jobs.redbull.com/nz/en' title='Jobs' target='_blank'><span>Jobs</span></a>
               <div class="right">
-                <a class="btn btn-link ss-social-circle ss-facebook"  href="#"></a>
-                <a class="btn btn-link ss-social-circle ss-twitter"   href="#"></a>
-                <a class="btn btn-link ss-social-circle ss-instagram" href="#"></a>
+                <a class="btn btn-link ss-social-circle ss-facebook"  target="blank" href="http://facebook.com/redbull"></a>
+                <a class="btn btn-link ss-social-circle ss-twitter"   target="blank" href="http://twitter.com/redbullnz"></a>
+                <a class="btn btn-link ss-social-circle ss-instagram" target="blank" href="http://instagram.com/redbullnz"></a>
               </div>
             </nav>
           </div><!-- Home Can Info -->
