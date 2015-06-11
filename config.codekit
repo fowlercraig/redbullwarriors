@@ -55,7 +55,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 104640,
+		"initialSize": 132298,
 		"inputAbbreviatedPath": "\/assets\/img\/bg-background.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/bg-background.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -2123,19 +2123,19 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 106180,
+		"initialSize": 397114,
 		"inputAbbreviatedPath": "\/assets\/img\/warriorsbg.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/warriorsbg.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/js\/PIE.js": {
+	"\/assets\/js\/pie.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/js\/PIE.js",
-		"outputAbbreviatedPath": "\/assets\/js\/min\/PIE-min.js",
+		"inputAbbreviatedPath": "\/assets\/js\/pie.js",
+		"outputAbbreviatedPath": "\/assets\/js\/min\/pie-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -2165,7 +2165,7 @@
 		},
 	"\/assets\/js\/scripts.min.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/js\/scripts.min.js",
 		"outputAbbreviatedPath": "\/assets\/js\/min\/scripts.min-min.js",
@@ -4481,6 +4481,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/parts\/home\/tabs.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/parts\/home\/tracking.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/parts\/home\/tracking.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -10756,7 +10765,7 @@
 		},
 	"\/src\/js\/min\/scripts-min.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/src\/js\/min\/scripts-min.js",
 		"outputAbbreviatedPath": "\/src\/js\/min\/min\/scripts-min-min.js",
@@ -10781,10 +10790,10 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/src\/js\/scripts.js",
-		"outputAbbreviatedPath": "\/src\/js\/min\/scripts-min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/scripts.min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 0,
 		"syntaxCheckerStyle": 1
 		},
 	"\/src\/less\/_base.less": {
@@ -11082,7 +11091,7 @@
 		"outputStyle": 0,
 		"relativeURLS": 0,
 		"shouldRunAutoprefixer": 1,
-		"shouldRunBless": 1,
+		"shouldRunBless": 0,
 		"strictImports": 0,
 		"strictMath": 0,
 		"strictUnits": 0
