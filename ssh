@@ -1,0 +1,20 @@
+ssh wearegiants.net@s147445.gridserver.com
+
+cd domains/warriors.redbull.com/html/wp-content/themes/redbullwarriors
+
+ssh warriorscanrb@warriorscan.redbull.com
+
+updating warriorscan rb
+
+ServerName warriorscan.redbull.com
+ServerAlias www.warriorscan.redbull.com
+
+UNIX_USER          MYSQL_USER     PASS
+warriorscanrb      warriorscanrb  ug2oophoahaKouc
+
+rsync -avz wearegiants.net@s147445.gridserver.com:/nfs/c08/h03/mnt/147445/domains/warriors.redbull.com/html/wp-content/themes/redbullwarriors /home/www/warriorscan.redbull.com/web/public/wp-content/themes/
+
+
+Folders
+/nfs/c08/h03/mnt/147445/domains/warriors.redbull.com/html/wp-content/themes/redbullwarriors
+/home/www/warriorscan.redbull.com/web/public/wp-content/themes/redbullwarriors

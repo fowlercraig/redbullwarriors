@@ -55,7 +55,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 132298,
+		"initialSize": 104640,
 		"inputAbbreviatedPath": "\/assets\/img\/bg-background.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/bg-background.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -2123,19 +2123,19 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 397114,
+		"initialSize": 106180,
 		"inputAbbreviatedPath": "\/assets\/img\/warriorsbg.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/warriorsbg.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/js\/pie.js": {
+	"\/assets\/js\/PIE.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/js\/pie.js",
-		"outputAbbreviatedPath": "\/assets\/js\/min\/pie-min.js",
+		"inputAbbreviatedPath": "\/assets\/js\/PIE.js",
+		"outputAbbreviatedPath": "\/assets\/js\/min\/PIE-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -4481,15 +4481,6 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/parts\/home\/tabs.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/parts\/home\/tracking.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/parts\/home\/tracking.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
