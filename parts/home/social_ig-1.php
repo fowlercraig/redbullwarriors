@@ -3,7 +3,7 @@
 
 <?php
 
-  $args = array (
+  $ig_args_1 = array (
 
     'posts_per_page' => 8,
     'paged'          => $paged,
@@ -18,22 +18,29 @@
 
   );
 
-  $temp = $wp_query;
-  $wp_query = null;
-  $wp_query = new WP_Query();
-  $wp_query->query($args);
-  $i = 1; echo '<div>';
-  while ($wp_query->have_posts()) : $wp_query->the_post();
+  $temp = $ig1_query;
+  $ig1_query = null;
+  $ig1_query = new WP_Query();
+  $ig1_query->query($ig_args_1);
+
+  $i = 1;
+  $total_posts = $ig1_query->post_count;
+  $wrap_div = "<div class='wrap'>";
+  echo $wrap_div;
+
+  while ($ig1_query->have_posts()) : $ig1_query->the_post();
 ?>
 
-<?php include locate_template('parts/home/social--image.php' ); ?>
-<?php if($i % 4 == 0) {echo '</div><div>';} ?>
+<?php 
+  include locate_template('parts/home/social--image.php' );
+  if($i % 4 == 0 && $i != $total_posts) {echo '</div><div class="wrap">';}
+?>
 
 <?php
   $i++;
   endwhile;
-  $wp_query = null;
-  $wp_query = $temp;  // Reset
+  $ig1_query = null;
+  $ig1_query = $temp;  // Reset
   echo '</div>';
 ?>
 </div>

@@ -23,12 +23,15 @@
   $wp_query = null;
   $wp_query = new WP_Query();
   $wp_query->query($args);
+  
   $i = 1; echo '<div>';
+  $total_posts = $wp_query->post_count;
+
   while ($wp_query->have_posts()) : $wp_query->the_post();
 ?>
 
 <?php include locate_template('parts/home/social--image.php' ); ?>
-<?php if($i % 4 == 0) {echo '</div><div>';} ?>
+<?php if($i % 4 == 0 && $i != $total_posts) {echo '</div><div>';} ?>
 
 <?php
   $i++;
